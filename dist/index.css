@@ -1,8 +1,17 @@
 body{
     margin: 0;
+    background: url("img/bg.jpg");
+        background-size: auto;
 }
 canvas{
     position: fixed;
     top: 0;
     left: 0;
+    z-index: -999;
   }
+
+
+  .temp-content{
+      z-index: -9999;
+  }
+
