@@ -1,7 +1,9 @@
 body{
     margin: 0;
-    background: url("img/bg.jpg");
-        background-size: auto;
+    /* background: url("img/bg.jpg"); */
+    background-color: black;
+    background-size: auto;
+    /* z-index: 999; */
 }
 canvas{
     position: fixed;

@@ -29,31 +29,57 @@ renderer.render(scene, camera);
 // spaceTexture.magFilter = THREE.NearestFilter;
 // scene.background = spaceTexture;
 
-let loader = new THREE.TextureLoader();
-loader.load("smoke.png", function(texture){
 
-})
-scene.fog = new THREE.FogExp2(0x03544e, 0.001);
-renderer.setClearColor(scene.fog.color);
+// scene.fog = new THREE.FogExp2(0x03544e, 0.001);
+// renderer.setClearColor(scene.fog.color);
 
 
+let clouds = [];
+
+const cloudGeo = new THREE.PlaneBufferGeometry(5,5);
+const cloudMaterial = new THREE.MeshLambertMaterial({
+  map:new THREE.TextureLoader().load('img/smoke-1.png'),
+  transparent: true
+});
 
 
 
-
+for(let i = 0; i < 60; i++){
+let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
+let posx = Math.random() * 9 - 7;
+let posy = Math.random() * 6 - 2;
+let posz = Math.random() * -50;
+cloud.position.set(posx,posy,posz);
+cloud.rotation.z = Math.random()*2*Math.PI;
+cloud.material.opacity = 0.55;
+clouds.push(cloud);
+scene.add(cloud);
+}
 
 // LIGHTS
-const pointLight = new THREE.PointLight(0xffffff);
-pointLight.position.set(10,0,0);
+// const pointLight = new THREE.PointLight(0xffffff);
+// pointLight.position.set(10,0,0);
+let directionalLight = new THREE.PointLight(0x00ff08);
+directionalLight.position.set(5,2,1);
+
+
+let directionalLightBlue = new THREE.PointLight(0x0400ff);
+directionalLightBlue.position.set(-10,5,1);
+
+
+
+scene.add(directionalLight);
+scene.add(directionalLightBlue);
 
 const ambientLight = new THREE.AmbientLight(0xffffff);
-scene.add(pointLight, ambientLight);
+scene.add(ambientLight);
+
+// const lightHelper = new THREE.PointLightHelper(directionalLight);
+// scene.add(lightHelper);
+// const lightHelperb = new THREE.PointLightHelper(directionalLightBlue);
+// scene.add(lightHelperb);
 
 
-
-
-const starGeometry = new THREE.SphereGeometry(5,5,5);
-const starMaterial = new THREE.MeshBasicMaterial({color: 0xff0000})
 
 
 const asteroidGeometry = new THREE.SphereGeometry(2, 20, 12);
@@ -63,7 +89,9 @@ const asteroidMaterial = new THREE.MeshBasicMaterial({
 })
 
 const asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
+asteroid.position.set(2, 2, 2);
 scene.add(asteroid);
+
 
 
 // const geometry2 = new THREE.BoxGeometry();
@@ -80,6 +108,11 @@ function animate(){
   // asteroid.scale.x += .1;
   // camera.rotation.y += .001;
   
+  for(let i = 0; i < clouds.length; i++){
+    // clouds[i].rotation.z -= .001;
+    clouds[i].rotation.z += .0005;
+    // clouds[i].position.z -= .05;
+  }
 }
 
 animate();
