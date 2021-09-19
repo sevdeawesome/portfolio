@@ -53,7 +53,7 @@ const cloudMaterial = new THREE.MeshLambertMaterial({
 
 
 
-for(let i = 0; i < 30; i++){
+for(let i = 0; i < 40; i++){
 let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
 let posx = Math.random() * 20 - 11;
 let posy = -100 ;
@@ -69,18 +69,18 @@ scene.add(cloud);
 // const pointLight = new THREE.PointLight(0xffffff);
 // pointLight.position.set(10,0,0);
 let directionalLightGreen = new THREE.PointLight(0x00ff08);
-directionalLightGreen.position.set(5,-5,4);
+directionalLightGreen.position.set(20,-5,14);
 
 
 let directionalLightBlue = new THREE.PointLight(0x0400ff);
-directionalLightBlue.position.set(-10,5,1);
+directionalLightBlue.position.set(-20,5,14);
 
 let directionalLightPink = new THREE.PointLight(0xb300ff);
-directionalLightPink.position.set(-20,-5,4);
+directionalLightPink.position.set(0,-8,15);
 
 scene.add(directionalLightGreen);
 scene.add(directionalLightBlue);
-scene.add(directionalLightPink);
+// scene.add(directionalLightPink);
 const ambientLight = new THREE.AmbientLight(0xffffff);
 scene.add(ambientLight);
 
@@ -103,7 +103,7 @@ const asteroidMaterial = new THREE.MeshBasicMaterial({
 })
 
 
-for(let i = 0; i < 50; i++){
+for(let i = 0; i < 55; i++){
   const asteroidGeometry = new THREE.SphereGeometry(Math.random() * .8, 8, 7);
   let asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
   scene.add(asteroid);
@@ -139,8 +139,6 @@ function moveCamera() {
   
 
     camera.rotation.z = .0005 * t;
-
-    console.log(t);
     document.getElementById("header").style.opacity = 1 + (t/300);
     clouds.forEach(cloud =>{
     cloud.position.y = -t * .02 +1;
@@ -162,9 +160,7 @@ function animate(){
   // camera.rotation.y += .001;
   
   for(let i = 0; i < clouds.length; i++){
-    // clouds[i].rotation.z -= .001;
-    clouds[i].rotation.z += .0005;
-    // clouds[i].position.z -= .05;
+    clouds[i].rotation.z += .0008;
   }
 }
 

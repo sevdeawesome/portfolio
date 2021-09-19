@@ -2,6 +2,32 @@
 #footer {   
        width:100%;
        text-align: center;
+       /* background-image: url("img/visitor.png");
+       background-repeat: none;
+       background-position-y: top; */
        /* position: absolute; */
        /* background: blue; */
+       background-image: linear-gradient(to top, rgba(255,0,0,.5) 0%, transparent 40%);
+       margin: 0;
+       padding: 0;
+       bottom: 0;
+       margin-bottom: -20px;
+}
+.visitor{
+       /* position: relative;
+       left: 0px;
+       top: 0px; */
+       /* float: left; */
+       z-index: -20;
+       margin-bottom: -20px;
+}
+#footer p{
+       position: relative;
+       text-align: center;
+       z-index: 5;
+       right: 0;
+       left: 0;
+       padding: 20px;
+       /* bottom: 0; */
+       /* float: right; */
 }

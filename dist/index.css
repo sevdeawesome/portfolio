@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    padding: 0;
     /* background: url("img/bg.jpg"); */
     /* background-color: black; */
     background-size: auto;
@@ -17,7 +18,7 @@ canvas{
     height: 100vh;
 }
 .title{
-    padding-top: 300px;
+    padding-top: 20vh;
     /* padding-bottom: 2000px; */
     font-size: 70px;
     text-align: center;
@@ -42,9 +43,12 @@ i{
 
 /* MY WORK SECTION */
 #content{
-    height: 100vh;
+    min-height: 50vh;
 }
 
+#content2{
+    min-height: 100vh;
+}
 
 
 
