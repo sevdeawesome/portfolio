@@ -1,7 +1,7 @@
 body{
     margin: 0;
     /* background: url("img/bg.jpg"); */
-    background-color: black;
+    /* background-color: black; */
     background-size: auto;
     /* z-index: 999; */
     color: white;
@@ -10,7 +10,7 @@ canvas{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: -999;
+    z-index: -9;
   }
 /* TITLE SECTION - SECTION 1 */
 #header{
@@ -23,8 +23,16 @@ canvas{
     text-align: center;
 }
 
-
-
+.bottom{
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    right: 0; 
+    margin-left: auto; 
+    margin-right: auto; 
+    font-size: 35px;
+    opacity: .8;
+}
 i{
     font-size: 48px;
     padding: 20px;
@@ -39,17 +47,4 @@ i{
 
 
 
-/* BOTTOM */
-#bottom{
-    height: 100vh;
-    background: blue;
-}
-#footer {   
-       left:0px;
-       bottom: 0;
-       margin-bottom: 0px;
-       width:100%;
-       margin-bottom: 30px;
-       text-align: center;
-       /* position: absolute; */
-}
+

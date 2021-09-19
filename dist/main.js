@@ -19,7 +19,7 @@ const renderer = new THREE.WebGLRenderer({
 renderer.setPixelRatio(window.devicePixelRatio);
 
 renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(30);
+camera.position.setZ(35);
 
 
 renderer.render(scene, camera);
@@ -36,7 +36,8 @@ renderer.render(scene, camera);
 
 let clouds = [];
 let asteroids = [];
-// let stars = [];
+let stars = [];
+let speeds = [];
 
 
 
@@ -44,7 +45,7 @@ let asteroids = [];
 
 
 // CLOUDS
-const cloudGeo = new THREE.PlaneBufferGeometry(17,17);
+const cloudGeo = new THREE.PlaneBufferGeometry(19,19);
 const cloudMaterial = new THREE.MeshLambertMaterial({
   map:new THREE.TextureLoader().load('img/smoke-1.png'),
   transparent: true
@@ -54,8 +55,8 @@ const cloudMaterial = new THREE.MeshLambertMaterial({
 
 for(let i = 0; i < 30; i++){
 let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
-let posx = Math.random() * 17 - 9;
-let posy = Math.random() * 6 - 2;
+let posx = Math.random() * 20 - 11;
+let posy = -100 ;
 let posz = Math.random() * -50;
 cloud.position.set(posx,posy,posz);
 cloud.rotation.z = Math.random()*2*Math.PI;
@@ -102,12 +103,13 @@ const asteroidMaterial = new THREE.MeshBasicMaterial({
 })
 
 
-for(let i = 0; i < 13; i++){
-  const asteroidGeometry = new THREE.SphereGeometry(Math.random() + .3, 8, 7);
+for(let i = 0; i < 50; i++){
+  const asteroidGeometry = new THREE.SphereGeometry(Math.random() * .8, 8, 7);
   let asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
   scene.add(asteroid);
   asteroid.position.y = -20 * Math.random() + 20*Math.random();
-  asteroid.position.x = -20 * Math.random() + 20*Math.random();
+  asteroid.position.x = -25 * Math.random() + 25*Math.random();
+  speeds.push(Math.random() * 100);
   asteroids.push(asteroid);
 }
 
@@ -123,24 +125,26 @@ for(let i = 0; i < 13; i++){
 
 function moveCamera() {
   const t = document.body.getBoundingClientRect().top;
-  
-  asteroids.forEach(asteroid =>{
+  for(let i = 0; i < asteroids.length; i++)
+  {
     if(t < -100){
-      asteroid.position.z =  -( .15* t) - 100;
+      asteroids[i].position.z =  -( .15* t) - 150 + speeds[i];
     }
     else{
-      asteroid.position.z =  -1000;
+      asteroids[i].position.z =  -1000;
     }
-    asteroid.rotation.x += .01;
-    asteroid.rotation.z += .03;
-    // asteroid.position.x = .004*t;
-    // asteroid.position.y = -t * .025 - 20;
+    asteroids[i].rotation.x += .01;
+    asteroids[i].rotation.z += .03;
+  }
+  
+
+    camera.rotation.z = .0005 * t;
+
     console.log(t);
-  });
-  // camera.position.z = 30 + t * 0.01;
-  // camera.position.y = t * 0.02;
-  clouds.forEach(cloud =>{
-    cloud.position.y = -t * .02;
+    document.getElementById("header").style.opacity = 1 + (t/300);
+    clouds.forEach(cloud =>{
+    cloud.position.y = -t * .02 +1;
+    cloud.position.z = -t * .02;
   })
   // camera.rotation.y = t * -0.002;
 }

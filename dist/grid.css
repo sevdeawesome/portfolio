@@ -10,7 +10,7 @@
     transition: all 500ms;
     background-size: cover;
     background-position: center;
-    border: 10px solid rgba(114, 186, 94, 0.35);
+    /* border: 10px solid rgba(114, 186, 94, 0.35); */
  }
  .card:hover {
     box-shadow: rgba(2, 8, 20, 0.2) 0px 0.35em 1.175em, rgba(2, 8, 20, 0.08) 0px 0.175em 0.5em;
@@ -20,7 +20,7 @@
     display: grid;
     gap: 1rem;
     /* grid-template-columns: 1fr 1fr 1fr; */
-    grid-template-columns: repeat(auto-fill, minmax(400px, 500px));
+    grid-template-columns: repeat(auto-fill, minmax(300px, 700px));
     /* background: red; */
     /* align-items: end; */
     /* justify-items: end; */

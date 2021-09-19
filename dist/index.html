@@ -6,19 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="index.css" rel="stylesheet">
     <link href="grid.css" rel="stylesheet">
+    <link href="bottom.css" rel="stylesheet">
+    <link href="stars.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    
     <canvas id="bg"></canvas>
     <div id="header">
       <center><h1 class="title">Severin Field</h1>
         <i class="fa fa-github"></i><i class="fa fa-instagram"></i><i class="fa fa-linkedin"></i>
-        </center>
+        
+        <div class="bottom"> <i class="fa fa-chevron-down"></i></div>
+      </center>
     </div>
     
 
-
-    <div id="content">
+   
+    <div id="content" >
       <h1 class="title">My work</h1>
        <section class="basic-grid">
          <div class="card">1</div>
@@ -31,10 +38,15 @@
     </div>
 
 
+    <!-- <div class="clouds"></div> -->
     
-    <div id="footer">
-      <p>Website created by Severin Field</p>
-    </div>
+
+    <!-- <div id="bottom"></div> -->
+    <div class="clouds"></div>
     <script type="module" src="main.js"></script>
   </body>
+  <div id="footer" >
+      
+    <p>Website created by Severin Field<br> </p>
+  </div>
 </html>
