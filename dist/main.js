@@ -53,7 +53,7 @@ const cloudMaterial = new THREE.MeshLambertMaterial({
 
 
 
-for(let i = 0; i < 40; i++){
+for(let i = 0; i < 30; i++){
 let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
 let posx = Math.random() * 20 - 11;
 let posy = -100 ;
@@ -103,8 +103,9 @@ const asteroidMaterial = new THREE.MeshBasicMaterial({
 })
 
 
-for(let i = 0; i < 55; i++){
-  const asteroidGeometry = new THREE.SphereGeometry(Math.random() * .8, 8, 7);
+for(let i = 0; i < 25; i++){
+  let size = Math.random() * .5 + .4;
+  const asteroidGeometry = new THREE.SphereGeometry(size, 8, 7);
   let asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
   scene.add(asteroid);
   asteroid.position.y = -20 * Math.random() + 20*Math.random();
@@ -128,23 +129,23 @@ function moveCamera() {
   for(let i = 0; i < asteroids.length; i++)
   {
     if(t < -100){
-      asteroids[i].position.z =  -( .15* t) - 150 + speeds[i];
+      asteroids[i].position.z =  -( .12* t) - 150 + speeds[i];
+      asteroids[i].rotation.x += .01;
+      asteroids[i].rotation.z += .03;
     }
     else{
       asteroids[i].position.z =  -1000;
     }
-    asteroids[i].rotation.x += .01;
-    asteroids[i].rotation.z += .03;
+    
   }
   
-
     camera.rotation.z = .0005 * t;
     document.getElementById("header").style.opacity = 1 + (t/300);
     clouds.forEach(cloud =>{
     cloud.position.y = -t * .02 +1;
     cloud.position.z = -t * .02;
   })
-  // camera.rotation.y = t * -0.002;
+
 }
 
 document.body.onscroll = moveCamera;
@@ -155,10 +156,6 @@ moveCamera();
 function animate(){
   requestAnimationFrame(animate);
   renderer.render(scene, camera);
-  
-  // asteroid.scale.x += .1;
-  // camera.rotation.y += .001;
-  
   for(let i = 0; i < clouds.length; i++){
     clouds[i].rotation.z += .0008;
   }
