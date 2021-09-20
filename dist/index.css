@@ -1,8 +1,9 @@
 body{
     margin: 0;
     padding: 0;
-    /* background: url("img/bg.jpg"); */
-    /* background-color: black; */
+    background: url("img/bg.png");
+    background-color: black;
+
     background-size: auto;
     /* z-index: 999; */
     color: white;
@@ -12,6 +13,9 @@ canvas{
     top: 0;
     left: 0;
     z-index: -9;
+  }
+  a{
+      color: white;
   }
 /* TITLE SECTION - SECTION 1 */
 #header{
@@ -49,6 +53,8 @@ i{
 #content2{
     min-height: 100vh;
 }
+
+
 
 
 
