@@ -1,31 +1,58 @@
+/* 
+TODO COLOR SCHEME
+TODO FONTS AND FONT SIZES
+TODO BACKGROUND
+TODO 
+
+
+font-family: 'Open Sans', sans-serif;
+font-family: 'Staatliches', cursive;
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Staatliches&display=swap');
+
+
 body{
     margin: 0;
     padding: 0;
-    background: url("img/bg.png");
-    background-color: black;
+    /* background: url("img/bg2.jpg"); */
+    background-color: #180E1B;
 
     background-size: auto;
     /* z-index: 999; */
     color: white;
+    font-family: 'Open Sans', sans-serif;
 }
+
 canvas{
     position: fixed;
     top: 0;
     left: 0;
     z-index: -9;
   }
-  a{
-      color: white;
-  }
+
+
+i{
+    font-size: 2rem !important;
+    padding: 20px;
+    margin-top: -50px;
+}
+
+a{
+    color: white;
+}
 /* TITLE SECTION - SECTION 1 */
 #header{
     height: 100vh;
 }
+
 .title{
-    padding-top: 20vh;
+    padding-top: 10vh;
+    padding-bottom: 0;
     /* padding-bottom: 2000px; */
-    font-size: 70px;
+    /* font-size: 100px; */
     text-align: center;
+    font-family: 'Staatliches', cursive;
 }
 
 .bottom{
@@ -38,23 +65,14 @@ canvas{
     font-size: 35px;
     opacity: .8;
 }
-i{
-    font-size: 48px;
-    padding: 20px;
-    padding-top: 0;
+
+
+h1{
+    font-size: 15vh;
 }
-
-
-/* MY WORK SECTION */
-#content{
-    min-height: 50vh;
+h2{
+    font-size: 6vh;
 }
-
-#content2{
-    min-height: 100vh;
+p{
+    font-size: 4vh;
 }
-
-
-
-
-

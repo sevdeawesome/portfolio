@@ -7,7 +7,7 @@
        background-position-y: top; */
        /* position: absolute; */
        /* background: blue; */
-       background-image: linear-gradient(to top, rgba(255,0,0,.5) 0%, transparent 40%);
+       background-image: linear-gradient(to top, rgba(88,53,94,.9) 0%, transparent 20%);
        margin: 0;
        padding: 0;
        bottom: 0;
@@ -28,7 +28,6 @@
        z-index: 5;
        right: 0;
        left: 0;
-       padding: 20px;
        /* bottom: 0; */
        /* float: right; */
 }

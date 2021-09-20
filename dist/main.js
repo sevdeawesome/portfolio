@@ -54,28 +54,30 @@ const cloudMaterial = new THREE.MeshLambertMaterial({
 
 
 for(let i = 0; i < 30; i++){
-let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
-let posx = Math.random() * 20 - 11;
-let posy = -100 ;
-let posz = Math.random() * -50;
-cloud.position.set(posx,posy,posz);
-cloud.rotation.z = Math.random()*2*Math.PI;
-cloud.material.opacity = 0.55;
-clouds.push(cloud);
-scene.add(cloud);
+  let cloud = new THREE.Mesh(cloudGeo, cloudMaterial);
+  let posx = Math.random() * 20 - 11;
+  let posy = -100 ;
+  let posz = Math.random() * -50;
+  cloud.position.set(posx,posy,posz);
+  cloud.rotation.z = Math.random()*2*Math.PI;
+  cloud.material.opacity = 0.55;
+  clouds.push(cloud);
+  scene.add(cloud);
 }
 
 // LIGHTS
 // const pointLight = new THREE.PointLight(0xffffff);
 // pointLight.position.set(10,0,0);
-let directionalLightGreen = new THREE.PointLight(0x00ff08);
-directionalLightGreen.position.set(20,-5,14);
+// let directionalLightGreen = new THREE.PointLight(0x00ff08);
+let directionalLightGreen = new THREE.PointLight(0x07ED7A);
+directionalLightGreen.position.set(20,0,14);
 
 
-let directionalLightBlue = new THREE.PointLight(0x0400ff);
-directionalLightBlue.position.set(-20,5,14);
+// let directionalLightBlue = new THREE.PointLight(0x0400ff);
+let directionalLightBlue = new THREE.PointLight(0x00A3A0);
+directionalLightBlue.position.set(-20,0,14);
 
-let directionalLightPink = new THREE.PointLight(0xb300ff);
+let directionalLightPink = new THREE.PointLight(0x58355E);
 directionalLightPink.position.set(0,-8,15);
 
 scene.add(directionalLightGreen);
@@ -122,6 +124,9 @@ for(let i = 0; i < 25; i++){
 // const torus = new THREE.Mesh(geometry2, material2);
 // scene.add(torus);
 
+const contentHeight = document.getElementById("content").getBoundingClientRect().height;
+const topHeight = document.getElementById("header").getBoundingClientRect().height;
+const height = contentHeight + topHeight;
 
 
 function moveCamera() {
@@ -132,18 +137,24 @@ function moveCamera() {
       asteroids[i].position.z =  -( .12* t) - 150 + speeds[i];
       asteroids[i].rotation.x += .01;
       asteroids[i].rotation.z += .03;
+      
     }
     else{
       asteroids[i].position.z =  -1000;
     }
     
   }
-  
+    let content2pos = document.getElementById("content2").getBoundingClientRect().top;
+    let footerpos = document.getElementById("footer").getBoundingClientRect().top;
+    console.log(footerpos);
     camera.rotation.z = .0005 * t;
     document.getElementById("header").style.opacity = 1 + (t/300);
+    document.getElementById("content").style.opacity = -t / topHeight;
+    document.getElementById("content2").style.opacity = 1 - (.001)*content2pos;
+    document.getElementById("footer").style.opacity = 1.5 - (.001)*footerpos;
     clouds.forEach(cloud =>{
-    cloud.position.y = -t * .02 +1;
-    cloud.position.z = -t * .02;
+      cloud.position.y = -t * .02 + 2.1;
+      cloud.position.z = -t * .02;
   })
 
 }

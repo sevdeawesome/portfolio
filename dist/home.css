@@ -1,0 +1,23 @@
+.subtext{
+    margin-top: -5vh;
+}
+
+h1,h2{
+    font-family: 'Staatliches', cursive;
+}
+h2{
+    vertical-align: bottom;
+    margin-top: -1vh;
+    text-decoration: underline;
+}
+
+/* MY WORK SECTION */
+#content{
+    min-height: 50vh;
+    /* left: 50vw; */
+    /* display: none; */
+}
+
+#content2{
+    min-height: 100vh;
+}
