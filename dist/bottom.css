@@ -31,3 +31,7 @@
        /* bottom: 0; */
        /* float: right; */
 }
+#footer i{
+       padding: 25px;
+       font-size: 2.5em;
+}

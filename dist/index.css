@@ -1,9 +1,9 @@
 /* 
 TODO COLOR SCHEME
 TODO FONTS AND FONT SIZES
-TODO BACKGROUND
-TODO 
+TODO BACKGROUND >
 
+!PALLETE: https://coolors.co/ec0b43-58355e-000000-39f999-00a3a0-f4f7f5
 
 font-family: 'Open Sans', sans-serif;
 font-family: 'Staatliches', cursive;
@@ -31,15 +31,21 @@ canvas{
     z-index: -9;
   }
 
-
+/* 
 i{
     font-size: 2rem !important;
     padding: 20px;
     margin-top: -50px;
-}
+} */
 
 a{
     color: white;
+    font-family: 'Staatliches', cursive;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+
 }
 /* TITLE SECTION - SECTION 1 */
 #header{
@@ -69,10 +75,16 @@ a{
 
 h1{
     font-size: 15vh;
+    font-family: 'Staatliches', cursive;
 }
 h2{
     font-size: 6vh;
+    font-family: 'Staatliches', cursive;
+}
+h3{
+    font-size: 4vh; 
+    font-family: 'Staatliches', cursive;
 }
 p{
-    font-size: 4vh;
+    font-size: 3.5vh;
 }

@@ -4,11 +4,12 @@
 
 h1,h2{
     font-family: 'Staatliches', cursive;
+    margin: 0px;
 }
 h2{
     vertical-align: bottom;
     margin-top: -1vh;
-    text-decoration: underline;
+    /* text-decoration: underline; */
 }
 
 /* MY WORK SECTION */

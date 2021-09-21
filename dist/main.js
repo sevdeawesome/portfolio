@@ -36,7 +36,7 @@ renderer.render(scene, camera);
 
 let clouds = [];
 let asteroids = [];
-let stars = [];
+// let stars = [];
 let speeds = [];
 
 
