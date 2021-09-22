@@ -3,11 +3,11 @@
     flex-direction: column;
     justify-content: top;
     align-items: left;
-    background: rgba(119, 119, 119, 0.4);
+    background: rgba(148, 148, 148, 0.404);
     font-size: 3rem;
     color: #F4F7F5;
     padding: 20px;
-    transition: all 500ms;
+    transition: all 350ms;
     background-size: cover;
     background-position: center;
     /* border: 10px solid rgba(114, 186, 94, 0.35); */
