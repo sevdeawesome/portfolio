@@ -1,0 +1,20 @@
+body{
+  background: #B5B5B7;
+}
+.question{
+background: #f2b632;
+  text-align: center;
+  font-size: 4rem;
+  margin-top: 4%;
+  padding: 50px;
+  font-family: 'Raleway', sans-serif;
+}
+#ans{
+  background-color: #B5B5B7;
+  padding: 60px;
+}
+
+p{
+  font-family: 'Lora', serif;
+  font-size: 22px;
+}

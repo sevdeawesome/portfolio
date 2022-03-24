@@ -1,0 +1,67 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+p
+{
+  color: white;
+  font-size: 4.7vh;
+  font-family: 'VT323', monospace;
+  color: white;
+  text-shadow: 4px 4px black;
+  padding: 10px;
+  text-align: center;
+
+
+}
+
+
+.white
+{
+  color: white;
+}
+.black
+{
+  color: black;
+}
+.links{
+  font-size: 4.2vh;
+    color: white;
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition: .5s;
+
+    text-decoration: underline;
+    text-shadow: none;
+    background: black;
+    padding: 5px;
+    margin: 50px;
+}
+.links:hover{
+    color: #FF6EC7;
+}
+#footer {
+  z-index: 5;
+    position:fixed;
+    width: 100%;
+       bottom:0px;
+       margin-bottom: 0px;
+
+
+
+}
+
+
+
+#hidden
+{
+  display: none;
+  background-image: url("oldimg/pinkwhitenoise.jpg");
+   background-size: auto;
+   background-repeat: repeat;
+   background-position: center;
+   height: 100vh;
+   animation: noise .1s infinite;
+}

@@ -1,0 +1,106 @@
+.plan-container {
+  display: inline;
+  width: 620px;
+}
+
+.plan {
+  margin-left: -5px;
+  display: inline-block;
+  font: 18px 'Open Sans', sans-serif;
+  vertical-align: top;
+}
+
+table {
+  width: 400px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.table-2 {
+  position: relative;
+  z-index: 2;
+  border: 2px solid #FFD882;
+}
+
+.table-3 {
+  position: relative;
+  z-index: 2;
+  border: 2px solid #FFD882;
+}
+
+.features {
+  border-right: 1px solid #ddd;
+}
+
+th {
+  border-bottom: 1px solid #ddd;
+}
+
+.lead {
+  line-height: 40px;
+  padding: 20px;
+  font-family: 'ubuntu', sans-serif;
+  background: #354049;
+  text-align: center;
+}
+
+tbody tr:nth-child(2n+1) {
+  background: #858B90;
+  padding: 10px;
+}
+
+tbody tr:nth-child(2n) {
+  background: #B1B4B7;
+  padding: 10px;
+}
+
+.data {
+  text-align: center;
+}
+
+.table-2 .features,
+.table-3 .features,
+.table-4 .features {
+  display: none;
+}
+
+button {
+  padding: 10px 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background: #FFD882;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background .3s;
+  outline: 0;
+}
+
+button:focus,
+button:hover {
+  background: #ffe2a1;
+}
+
+button:active {
+  background: #ffce63;
+}
+
+@media screen and (max-width: 1028px) {
+  .plan-container {
+    display: block;
+    margin: auto;
+  }
+  .table-3 {
+    width: 420px;
+  }
+  .table-3 .features {
+    display: table-cell;
+  }
+}
+
+.text-muted {
+  color: #FFD882;
+}

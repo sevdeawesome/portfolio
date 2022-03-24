@@ -1,0 +1,24 @@
+#wannaburn
+{
+margin-top: 40vh;
+font-family: 'Montserrat', sans-serif;
+font-size: 52px;
+text-transform: lowercase;
+}
+.name{
+    background: linear-gradient(to right,  red,  #580000, rgb(255, 123, 0),red);
+    animation: glare 8s linear infinite;
+    background-size: 200% auto;
+    color: #000;
+      background-clip: text;
+ 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: opacity(100%);
+  filter: greyscale(100%);
+}
+@keyframes glare{
+    0% {background-position: 0%;}
+   50%{background-position: 200%; }
+   100%{background-position: 0%; }
+}

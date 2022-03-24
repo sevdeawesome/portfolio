@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Kosugi&display=swap');
+@font-face {
+			font-family: Katakana;
+			src: url('https://s.cdpn.io/26175/MoonBeams-katakana_.TTF');
+		}
+
+
+		@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+body{
+  margin: 0;
+  background: black;
+overflow-x: hidden;
+min-height: 200vh;
+
+}
+h1
+{
+	color: white;
+	text-align: center;
+font-family: 'VT323', monospace;
+	font-size: 9vh;
+	text-decoration: underline;
+
+
+}
+h2
+{
+	color: white;
+	text-align: center;
+	font-family: 'VT323', monospace;
+		font-size: 5vh;
+		margin-left: 20px;
+		margin-right: 20px;
+
+}
+.matrix
+{
+  z-index: -1000;
+  position: absolute;
+transform: rotate(90deg);
+font-family: 'Katakana';
+color: #FF6EC7;
+animation-name: fade, fall;
+animation-iteration-count: infinite;
+-webkit-animation-timing-function: ease-out;
+opacity: 0;
+
+
+
+}
+
+@keyframes fade{
+		    0%   { opacity: 0; }
+				1% { opacity: 1; }
+		    100% { opacity: 0; }
+		}
+@keyframes fall{
+		  from {top: 0; display: block;}
+			to 	{top: 150%;}
+		}
+.flip
+{
+  color: black;
+  background-color: white;
+
+  text-transform: uppercase;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 5.5vh;
+  padding: 20px;
+transition: .5s;
+}
+.flip:hover
+{
+  cursor: pointer;
+	color: #FF6EC7;
+}
+
+.panel {
+  color: black;
+  display: none;
+  background-color: white;
+
+	padding: 10px;
+  text-align: center;
+  font-family: 'VT323', monospace;
+  font-size: 3.7vh;
+}
+
+.box
+{
+	margin: 40px;
+  z-index: 1;
+  width: 45%;
+	box-shadow: 0px 0px .8em #6EFFA6;
+
+
+	display: inline-grid;
+}
+
+/** COMPUTER */
+@media screen and (min-width: 1500px) {
+
+  .box
+	{
+		width: 45%;
+	}
+}
+/* on Mobile */
+@media screen and (max-width: 1500px) {
+  .box
+  {
+    width: 87%;
+  }
+
+}

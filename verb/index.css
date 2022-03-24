@@ -1,0 +1,15 @@
+
+body {
+    height:100vh;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: hidden;
+    margin: 0;
+    background-image: url("img/bgtrans.png"),
+                    url("img/bgtransgreen.png"),
+                    url("img/bgpink.jpg");
+  background-size: cover, cover, cover;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-position:  50% 5px, 50% -5px, center;
+
+}

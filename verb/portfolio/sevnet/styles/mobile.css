@@ -1,0 +1,73 @@
+
+.70{
+  width: 70%;
+}
+
+#difference{
+width: 50%;
+margin: 10px;
+float: right;
+  display: inline;
+}
+@media all and (max-width:640px) {
+  body{
+overflow-x:hidden;}
+  #difference{
+width: 100%;
+  float: left;}
+  .50{
+    width: 94%;
+  }
+  .70{
+  width: 100%;
+}
+  #thangz{
+    font-size: 10vw;
+  }
+  .plan{
+   width: 70%;
+    margin: auto;
+    display: block;
+  }
+  .table-2{
+   
+  margin: auto;
+  }
+  #ans{
+width: 100%;
+  }
+  .inside p{
+    width: 100%;
+  }
+  *{
+    float: none;
+  }
+  .cright{
+    display: none;
+  }
+  .cleft{
+    width: 100%;
+  }
+  .why{
+    display: none;
+  }
+    footer{
+    display: none;
+  }
+  .mobilehide{
+    display: none;
+  }
+
+  .inside1{
+    width: 100%;
+    background: transparent;
+    text-align: center;
+    border: none;
+  }
+  .plan{
+    display: block;
+  }
+  .showonlymobile{
+  display: block;
+}
+}  

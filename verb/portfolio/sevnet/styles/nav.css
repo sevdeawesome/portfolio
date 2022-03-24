@@ -1,0 +1,63 @@
+.navbar{
+height: 70px;
+  background: #354049;
+  color: white;
+  box-shadow: 0px 0px 8px 2px #000000;
+  border-bottom: none;
+    font-size: 16px;
+}
+#navbtn{
+  color: white;
+  transition: .2s;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-size: 16px;
+  font-family: 'ubuntu', sans-serif;
+}
+#navbtn2{
+  color: white;
+  transition: .2s;
+  text-transform: uppercase;
+  margin-top: 10px;
+  font-family: 'ubuntu', sans-serif;
+  margin: 7px;
+}
+#navbtn3{
+  height: 90px;
+  top: 0;
+  margin-top: -24px;
+}
+#navbtn:hover{
+  border-bottom: orange 4px solid;
+}
+.client{
+  border: white 1px solid;
+  border-radius: 6%;
+  transition: .5s;
+  font-size: 16px;
+  padding: 2px;
+    
+}
+.client:hover{
+  border: #FFCC59 1px solid;
+  border-radius: 6%;
+  background-color: green;
+  box-shadow: 0px 0px 20px #FFCC59;
+}
+.panel {
+  border: white 1px solid;
+  border-radius: 6%;
+  transition: .5s;
+  font-size: 16px;
+  padding: 2px;
+    
+}
+.panel:hover{
+  border: #5C6078 1px solid;
+  border-radius: 6%;
+  background-color: green;
+  box-shadow: 0px 0px 20px #5C6078;
+}
+.collapse{
+  background: #354049;
+}

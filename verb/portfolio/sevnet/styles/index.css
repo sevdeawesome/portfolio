@@ -1,0 +1,306 @@
+body {
+  margin: 0;
+  position: relative;
+  background: linear-gradient(18deg, #f2b632 50%, #677077 50%);
+  background-blend-mode: hard-light;
+  font-family: 'Lora', serif;
+}
+footer{
+  background:#b5b5b7;
+}
+@import url('https://fonts.googleapis.com/css?family=Lora|Monoton|Ubuntu');
+h1{
+  font-family: 'Archivo Black', sans-serif;
+
+}
+.pp{
+  font-family: 'Monoton';
+}
+h2{
+   font-family: 'Archivo Black', sans-serif;
+
+}
+h4{
+   font-family:  'Ubuntu', sans-serif;
+  font-size: 23px;
+}
+p{
+  font-family: 'Lora', serif;
+  font-size: 20px;
+}
+a{
+  font-family: 'Lora', serif;
+  font-size: 21px;
+}
+.greeting h1 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 74px;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.greeting h2 {
+  font-family: 'Raleway', sans-serif;
+  font-weight: lighter;
+  font-size: 25px;
+  line-height: 0px;
+  text-align: center;
+  margin-top: 0;
+}
+
+@keyframes blinking {
+  0%    { opacity: 0; }
+  50%   { opacity: 0; }
+  51%   { opacity: 1; }
+  100%  { opacity: 1; }
+}
+.change-text:after {
+  content: '_';
+  animation: blinking 1.2s infinite;
+}
+.head{
+    height: auto;
+    background-image: url("bg.jpg");
+    background-color: black;
+    background-size: cover;
+    color: white;
+    padding: 14px;
+    min-height: 500px;
+}
+.head div{
+font-size: 21px;
+text-align: center;
+}
+ul{
+  ist-style: none;
+}
+.noob{
+  height: auto;
+  padding: 20px;
+  background-image: url("https://s9.postimg.org/ncakfs1in/drive.png");
+  background-repeat: no-repeat;
+  background-size: 270px;
+    background-position: 28% 10rem;
+  background-origin: content-box;
+  color: white;
+  overflow: hidden;
+  z-index: 4;
+}
+@media all and (max-width:840px) {
+   .noob { background: transparent; }
+  .convince{ display: none;}
+}
+.why{
+  background: #f2b632;
+  height: auto;
+  padding: 20px;
+
+  background-repeat: no-repeat;
+    background-position: center bottom;
+  background-origin: content-box;
+
+}
+.blue-glow-border {
+    display: inline-block;
+  width: 38%;
+  height: 170px;
+  border-color: blue;
+  border-width: 3px;
+  -moz-box-shadow: 0px 0px 20px #A57201;
+-webkit-box-shadow: 0px 0px 20px #A57201;
+box-shadow: 0px 0px 20px #A57201;
+  opacity: .82;
+  pading: 5px;
+  transition: .5s;
+  margin: 18px;
+  overflow: hidden;
+  background:#FFCC59;
+}
+.blue-glow-border:hover{
+  opacity: 1;
+    -moz-box-shadow: 0px 0px 20px #A57201;
+-webkit-box-shadow: 0px 0px 20px #A57201;
+box-shadow: 0px 0px 35px #A57201;
+}
+.concept{
+  background: #677077;
+  height: auto;
+  padding: 22px;
+  min-height: 350px;
+  text-align: center;
+  overflow: hidden;
+}
+.cleft{
+width: 28%;
+float: center;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+
+}
+.cright{
+  width: 28%;
+float: center;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+
+}
+.inside{
+margin-left: 20px;
+  margin-top: 10px;
+}
+.inside1{
+  background: rgba(181,181,183,.9);
+  width: 60%;
+  padding: 10px;
+  border: 2px solid #677077;
+}
+
+.wrapper{
+background: linear-gradient(-18deg, #677077 50%,  #f2b632 50%);
+  box-shadow: 0px -2px 5px #f2b632;
+  color: white;
+}
+a{
+  color: white;
+  text-decoration: none;
+}
+.box{
+display: inline-block;
+      text-align: center;
+    padding: 1em;
+width: 18%;
+  height: 340px;
+  border-color: blue;
+  border-width: 3px;
+  -moz-box-shadow: 0px 0px 20px #0000ff;
+-webkit-box-shadow: 0px 0px 20px #0000ff;
+box-shadow: 0px 0px 20px #0000ff;
+  padding: 5px;
+  transition: .5s;
+  margin: 18px;
+  overflow: hidden;
+  background: linear-gradient(45deg,#252839, #414582);
+}
+
+.box:hover{
+  transform: translateY(-1em);
+  opacity: 1;
+    -moz-box-shadow: 0px 0px 20px white;
+-webkit-box-shadow: 0px 0px 20px white;
+box-shadow: 0px 0px 35px black;
+  background: #252839;
+}
+
+.btn{
+        color: #fff;
+      font-size: 1.25em;
+      padding: 0.5em 1em;
+      display: inline-block;
+      border-radius: 2px;
+      transition: all 0.3s ease;
+    background-color: #f2b632;
+  margin-top: 80px;
+  margin-bottom: 5px;
+}
+.btn:hover{
+  background: #D2950E;
+}
+@media all and (max-width: 980px) {
+   .box { width: 90%; display:block; }
+}
+.padding{
+padding: 20px;}
+.button {
+	min-width: 150px;
+	max-width: 250px;
+	padding: 1em 2em;
+	color: inherit;
+  	color: #37474f;
+	border-color: #37474f;
+}
+.button:focus {
+	outline: none;
+}
+.button--text-thick {
+	font-weight: 600;
+}
+.button--moema {
+	padding: 1.5em 3em;
+	border-radius: 50px;
+	background: #F2B632;
+	color: #fff;
+}
+.button--moema.button--inverted {
+	color: #37474f;
+}
+
+.button--moema:hover {
+	-webkit-transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	transition: background-color 0.1s 0.3s, color 0.1s 0.3s;
+	color: #ECEFF1;
+	-webkit-animation: anim-moema-1 0.3s forwards;
+	animation: anim-moema-1 0.3s forwards;
+}
+.button--moema.button--inverted:hover {
+	color: #ECEFF1;
+	background-color: #7986cb;
+}
+.button--moema:hover::before {
+	-webkit-animation: anim-moema-2 0.3s 0.3s forwards;
+	animation: anim-moema-2 0.3s 0.3s forwards;
+}
+@-webkit-keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-1 {
+	60% {
+		-webkit-transform: scale3d(0.8, 0.8, 1);
+		transform: scale3d(0.8, 0.8, 1);
+	}
+	85% {
+		-webkit-transform: scale3d(1.1, 1.1, 1);
+		transform: scale3d(1.1, 1.1, 1);
+	}
+	100% {
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@-webkit-keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+@keyframes anim-moema-2 {
+	to {
+		opacity: 0;
+		-webkit-transform: scale3d(1, 1, 1);
+		transform: scale3d(1, 1, 1);
+	}
+}
+.button--text-upper {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+a:hover{
+text-decoration: none;
+  color: white;
+}
+.showonlymobile{
+  display: none;
+}

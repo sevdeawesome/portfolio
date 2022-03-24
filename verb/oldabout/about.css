@@ -1,0 +1,78 @@
+body{
+
+  margin: 0;
+}
+.bg{
+  height: 100vh;
+  background-image:url("../img/pinkbevtransparent.png");
+  background-repeat: repeat-x;
+  background-position: center;
+}
+img{
+  max-width: 540px;
+  height: auto;
+  top: 0;
+  margin-top: 0;
+  box-shadow: 0px 0px .1em #6EFFA6;
+  display: inline-block;
+  font-size: 3em;
+  font-family: 'VT323', monospace;
+margin: 50px;
+
+  }
+h3
+{
+
+  color: white;
+  text-shadow: .05em .05em black;
+  display: inline-block;
+  font-size: 2em;
+  font-family: 'VT323', monospace;
+  font-weight: normal;
+  background-color: rgba(0,0,0,.7);
+  padding: 20px;
+    box-shadow: 0px 0px .1em #6EFFA6;
+}
+
+.hdrs
+{
+  font-family: 'Rock Salt', cursive;
+text-align: center;
+padding-top: 5%;
+letter-spacing: .3em;
+
+	 font-size: 1.36em;
+text-shadow:  3px 0 #black;
+
+
+}
+
+#socials
+{
+  background: none;
+  color: #6EFFA6;
+  font-size: 1.4em;
+  text-decoration: none;
+}
+#socials:hover{
+  color: white;
+}
+/* compootr  */
+@media screen and (min-width: 1500px) {
+
+  h3
+  {
+    width: 50%;
+  }
+}
+/* on Mobile */
+@media screen and (max-width: 1500px) {
+  h3
+  {
+    width: 80%;
+  }
+  .content
+  {
+    margin-bottom: 800px;
+  }
+}
