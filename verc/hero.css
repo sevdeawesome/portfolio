@@ -1,0 +1,15 @@
+/* Language: css */
+/* Path: hero.css */
+/* create a dotted bottom border of id "hero"
+    with a width of 200px */
+
+#hero {
+    background-image: linear-gradient(to right, var(--white) 10%, rgba(255, 255, 255, 0) 0%);
+    background-position: bottom;
+    /* make the dashes in the border spaced out more */
+    background-size: 100px 2px;
+    background-repeat: repeat-x; 
+    height: 90vh;
+}
+    /* width: 400px; */
+/* } */

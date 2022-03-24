@@ -22,3 +22,7 @@ h2{
 #content2{
     min-height: 100vh;
 }
+
+#blankspace{
+    height: 80vh;
+}
