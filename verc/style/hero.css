@@ -9,7 +9,7 @@
     /* make the dashes in the border spaced out more */
     background-size: 100px 2px;
     background-repeat: repeat-x; 
-    height: 90vh;
+    min-height: 90vh;
 }
     /* width: 400px; */
 /* } */
