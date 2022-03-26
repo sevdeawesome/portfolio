@@ -1,4 +1,5 @@
-import * as THREE from 'https://cdn.skypack.dev/three';
+// import * as THREE from 'https://cdn.skypack.dev/three';
+import * as THREE from 'https://cdn.skypack.dev/three@0.138.2';
 
 
 //three@0.132.2

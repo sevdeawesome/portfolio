@@ -2,6 +2,22 @@
 
 
 body{
-    background-color: var(--blue);
+    background-color: black !important;
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+    overflow-x: hidden;
+    color: white !important;
 }
 
+
+.title{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 700;
+}
+.subtext{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: lighter !important;
+    /* color: red !important; */
+}
+.blankspace{
+    padding: 15vh;
+}

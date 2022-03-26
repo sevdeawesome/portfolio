@@ -1,0 +1,45 @@
+@keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-webkit-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-moz-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+@-ms-keyframes move-twink-back {
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.stars {
+  background:url(../img/stars.png) repeat top center;
+  /* background-color: pink; */
+  position: fixed;
+  top: 0; 
+  width:100%;
+  height:100%;
+  z-index:-999;
+  display:block;
+}
+.twinkling{
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    background:transparent url(../img/twinkling.png) repeat top center;
+    background-size: 15px;
+    z-index:-20;
+    -moz-animation:move-twink-back 200s linear infinite;
+    -ms-animation:move-twink-back 200s linear infinite;
+    -o-animation:move-twink-back 200s linear infinite;
+    -webkit-animation:move-twink-back 200s linear infinite;
+    animation: move-twink-back 1500s linear infinite;
+}
