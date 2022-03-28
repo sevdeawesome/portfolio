@@ -31,13 +31,19 @@
     font-family: 'Gothic A1', sans-serif;
     font-weight: bold;
     padding-top: 3px !important;
+    padding-left: 34px !important;
+    padding-right: 34px !important;
     
 }
 
 .nav-tabs{
     border:none !important;
-    margin-bottom: -3px !important;
+    margin-bottom: -5px !important;
     z-index: -5 !important;
+}
+
+ul .active{
+    z-index: 9999 !important;
 }
 .nav li{
     margin-bottom: -5px !important;
@@ -47,9 +53,11 @@
 
 .tab-content{
     position: relative;
-    border: none;
+    border: 1px solid black;
     z-index: 99 !important;
 }
+
+
 
 .justify-content-center{
     justify-content: center !important;
