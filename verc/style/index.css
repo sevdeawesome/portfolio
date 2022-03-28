@@ -1,4 +1,4 @@
-
+/* ! FONTS AND COLORS AND WHATNOT HERE */
 
 
 body{
@@ -8,16 +8,28 @@ body{
     color: white !important;
 }
 
-
+.subtext{
+    margin-top: -2px !important;
+}
+body{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 200;
+}
 .title{
     font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
 }
 .subtext{
     font-family: 'Gothic A1', sans-serif;
-    font-weight: lighter !important;
+    font-weight: 200 !important;
     /* color: red !important; */
 }
-.blankspace{
-    padding: 15vh;
+h3{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold !important;
+}
+p{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 400 !important;
+    /* color: red !important; */
 }

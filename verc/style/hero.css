@@ -15,4 +15,18 @@
 /* } */
 
 
+.blankspace{
+    padding: 15vh;
+}
 
+.bottom{
+    position: absolute;
+    bottom: 100px;
+}
+.height{
+    height: 100vh;
+    /* background: green; */
+}
+.mt-5{
+    margin-top: 5vh;
+}

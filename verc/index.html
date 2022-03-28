@@ -24,12 +24,13 @@
     <link href="style/asteroid.css" rel="stylesheet" type="text/css">
     <!-- import stars.css from the style folder -->
     <link href="style/stars.css" rel="stylesheet" type="text/css">
-
-    <!-- import bootstrap latest version from cdn -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="style/table.css" rel="stylesheet" type="text/css">
 
 
 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     <!-- BOOTSTRAP BORDERS FOR TESTING -->
     <!-- <link href="style/bootstrap-borders.css" rel="stylesheet" type="text/css"> -->
@@ -48,22 +49,89 @@
 
     <div class="container">
        
-        <div class="col-md-7 col-sm-10 mt-5 pt-3">
-            <div class="row mt-5">
-            </div>
-            <div class="row"><h1 class="title ">Severin Field</h1>
+        <div class="col-md-6 col-sm-10 height">
+            <div class="row mt-5"><h1 class="title">Severin Field</h1>
                 <h2 class="subtext">B.S. Physics from University of California, Riverside</h2>
             </div>
-            <div class="row m-5 p-5">
-                <div class="blankspace"></div>
-            </div>
-            <div class="row mt-5">
+
+            <div class="row bottom">
                 <h2 class="subtext">Just a gnarly ass dude who brings a lot to the table to any prospective employers. Interested in all sorts of crazy machine learning research.</h2>
             </div>
             
         </div>
         
         
+    </div>
+</div>
+
+
+<div id="work" class="container">
+    <h1 class="title">My Work</h1>
+    <h2 class="subtext">From Latest to Oldest</h2>
+
+    <br>
+
+
+    <div class="table">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">LIGO</a></li>
+        <li><a data-toggle="tab" href="#menu1">LLNL</a></li>
+        <li><a data-toggle="tab" href="#menu2">CS Projects</a></li>
+        <li><a data-toggle="tab" href="#menu3">Physics</a></li>
+        <li><a data-toggle="tab" href="#menu4">831Poker</a></li>
+        <li><a data-toggle="tab" href="#menu5">Other</a></li>
+        <li class="dropdown" id="mobilemenu">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            MENU <span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li><a href="#">HTML</a></li>
+              <li><a href="#">CSS</a></li>
+              <li><a href="#">JavaScript</a></li>                        
+            </ul>
+          </li>
+      </ul>
+    
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <div class="row">
+            <div class="col-md-12">
+              <center><img src="img/gw-merger.jpg" class="topimg"></center>
+            </div>
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            
+            <div class="col-md-4 col-sm-10">
+              <h3>BACKGROUND</h3>
+                <p>
+                  The Laser Interferometer Gravitational Wave Observatory (LIGO) is an organization that operates multiple 4km long michelson interferometers to detect gravitational waves. It is the most precise measuring tool ever created. In 2017, Dr. Barry Barish, a UCR faculty member, won the Nobel prize in physics for leading a team at LIGO to detect the first ever gravitational wave. Most LIGO research, like mine, is on finding ways to improve the detectors sensitivity to see more gravitational wave causing events (like black hole mergers or supernovae) further out in spacetime.
+  
+                </p>
+            </div>
+            <div class="col-md-8 col-sm-10">
+              <h1>Machine Learning Based Clustering of Auxiliary Channels at LIGO</h1>
+              <p>In a project supervised by Dr. Richardson PhD, Dr. Papalexakis PhD, Rutuja Gurav, a PhD student, and the help of Dr. Barry Barish PhD, I created a machine learning based tool to detect anomalous behavior in the hundreds of LIGO auxiliary channels. Stationed along the 4km long interferometer’s arms are all types of noise detectors - for example, microphones, seismometers, accelerometers and ground motion sensors. </p>
+              <br>
+              <h3>Poster Presented at LIGO's international yearly conference</h3>
+              <center><img src="img/lvk.png" class="img"></center>
+            </div>
+            
+          </div>
+          
+        </div>
+        <div id="menu1" class="tab-pane fade">
+          <h3>Menu 1</h3>
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <h3>Menu 2</h3>
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        </div>
+        <div id="menu3" class="tab-pane fade">
+          <h3>Menu 3</h3>
+          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        </div>
+      </div>
     </div>
 </div>
 
@@ -102,11 +170,6 @@
 <br><br><br>
 
 <!-- JavaScript scripts -->
-<!-- jQuery library -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-<!-- Import bootstrap javascript cdn -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
 
 <script src="js/asteroid.js" type="module"></script>
 
