@@ -31,7 +31,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- BOOTSTRAP BORDERS FOR TESTING -->
     <!-- <link href="style/bootstrap-borders.css" rel="stylesheet" type="text/css"> -->
@@ -83,12 +83,12 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             Other <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a href="#">Physics Research</a></li>
-              <li><a href="#">Minecraft Modding</a></li>
-              <li><a href="#">Discord Bots</a></li>
-              <li><a href="#">Web Design</a></li>
-              <li><a href="#">Algorithmic Trading</a></li>
-              <li><a href="#">Sevnet</a></li>                        
+              <li><a data-toggle="tab" href="#menu3">Physics Research</a></li>
+              <li><a data-toggle="tab" href="#menu4">Minecraft Modding</a></li>
+              <li><a data-toggle="tab" href="#menu4">Discord Bots</a></li>
+              <li><a data-toggle="tab" href="#menu4">Web Design</a></li>
+              <li><a data-toggle="tab" href="#">Algorithmic Trading</a></li>
+              <li><a data-toggle="tab" href="#">Sevnet</a></li>                        
             </ul>
           </li>
       </ul>
@@ -121,17 +121,82 @@
           </div>
           
         </div>
-        <div id="menu1" class="tab-pane fade">
-          <h3>Menu 1</h3>
-          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+        <div id="menu1" class="tab-pane fade in">
+          <div class="row">
+            <div class="col-md-12">
+              <br>
+              <center><img src="img/llnl.png" class="img2"></center>
+            </div>
+          </div>
+          <br>
+          <div class="row justify-content-center">
+            
+            <div class="col-md-4 col-sm-10">
+              <h3>BACKGROUND</h3>
+                <p>
+                  Lawrence Livermore National Laboratory is a Department of Energy lab in San Francisco. In the summer of 2021, the Data Science Institute hosted a summer internship for UC Riverside students where students worked in teams on two machine learning astrophysics problems and attend seminars given by researchers on their projects. 
+                </p>
+            </div>
+            <div class="col-md-8 col-sm-10">
+              <h1>LLNL Data Science Challenge</h1>
+              <p>
+                In a team of 4 undergraduate students, a graduate student, and a Lawrence Livermore Mentor, we solved two machine learning problems and gave a presentation on our results. The projects included cleaning data (set of images in this case), normalizing data, wrangling data, extensive EDA, training and testing various machine learning models, and finally creating meaningful visuals of our results.
+                <br>  
+                <b>Problem 1: </b>Our first problem was given a supervised learning dataset of images of nebulae (either galaxies or stars), create a neural network to classify galaxies and stars. The data has 4 channels for different bandwidths from optical filters, so we also identified which wavelengths galaxies and stars emitted the most light and trained models for each photometric band and subset of bands. 
+                <br><img src="img/DSC.png" class="img3"><br><br>
+                Figure 1. The data set has 4 channels for different bandwidths from optical filters. This is the what the processed data looks like.
+                <br><br>
+                <b>Problem 2:  </b> Given a dataset of injected asteroids on images from the Keck Observatory, we created multiple image classifying models to spot asteroids hidden in unlabeled data. Our result was a neural network with around a 97% accuracy in spotting asteroids in unseen testing data. 
+                <br><img src="img/dsc.gif" class="img3"><br><br>
+                Figure 2. A gif I created showing the sliding window over a large image of space, where the network was able to spot asteroids.
+              </p>
+              
+            </div>
+            
+          </div>
+          
         </div>
-        <div id="menu2" class="tab-pane fade">
-          <h3>Menu 2</h3>
-          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.</p>
+        
+        <div id="menu2" class="tab-pane fade padding">
+          <h1>
+            Relevant Computer Science School Projects
+          </h1>
+            <h3>A* Search</h3>
+            <p>
+            Search is a well known, ubiquitous tool in computer science and in data science. A* search is a search algorithm that adds unvisited nodes to a queue in order of a value f(n) -a heuristic distance measure- that assesses how close it is to the solution while considering how far it is from the start. f(n) is the sum of h(n), the value of a heuristic that is created by the programmer and g(n), the distance from the starting node. Since this algorithm is optimal and complete, the only way to create a better search is to create better heuristics for assigning f(n). I used multiple different heuristics to solve the 8 puzzle, comparing their runtime and storage complexity. 
+            <br>More information can be found at: <a href="https://github.com/sevdeawesome/A-Star-Search">https://github.com/sevdeawesome/A-Star-Search</a>
+          </p>
+
+
+            <h3>Feature Selection</h3>
+            <p> 
+            Often times data has many irrelevant features and irrelevant information. The curse of dimensionality suggests that simple, cleaner data can provide more information than the same data with irrelevant information included. In a project for an Artificial Intelligence course at UC Riverside, I made a tool that finds the optimal subset of features when using a simple k-means classification model on a dataset of supervised machine learning data. 
+            <br>More info can be found at: <a href="https://github.com/sevdeawesome/Feature-Selection">https://github.com/sevdeawesome/Feature-Selection</a>
+              </p>
+
+
+           <h3> Networking App</h3>
+           <p>
+            In a class project for Database Management, a classmate and I created a Java social networking app connected to an SQL database of user and connection information.
+            <br>More info can be found at: <a href=" https://github.com/sevdeawesome/Networking-App"> https://github.com/sevdeawesome/Networking-App</a>
+            </p>
+           <h3> Monte Carlo Problem</h3>
+           <p>
+            Imagine you were to create an equilateral triangle and pick a point randomly on each edge. What is the probability that the point in the center of the large triangle is within the sub-triangle created by the three random points? For an extra credit assignment in an Artificial Intelligence class, I created a quick tool to solve an interesting problem that our professor called “the triangle problem” using the Monte Carlo statistical method because there is no immediately straightforward method to solve this probability without an estimate. The Monte Carlo method is the use of repeated random sampling to obtain a statistical estimate of probability. 
+            Though this was a very simple and short project, I believe this is a very powerful tool in a wide range of machine learning problems and thought it would be interesting to include in this section. 
+            <br>Github link: <a href="https://github.com/sevdeawesome/monte_carlo_triangle">https://github.com/sevdeawesome/monte_carlo_triangle</a>
+          </p>
         </div>
-        <div id="menu3" class="tab-pane fade">
-          <h3>Menu 3</h3>
-          <p>Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.</p>
+        <div id="menu3" class="tab-pane fade padding">
+          <img src="img/831poker.png" class="img3">
+
+          <h1>831Poker</h1>
+          <p>My friends and I regularly play poker and the beginning of the pandemic threw a wrench in our weekly games. Since we didn’t want to pay for rake or premiums from poker websites, one of my friends and I created our own. Our app is a functioning multiplayer poker website with true RNG dealing, a fully integrated chat app, and multiple lobbies/games for scalability. We built it using Node.JS, vanilla javascript and used express/socket IO to handle bidirectional requests. We’re now considering creating bot opponents that can learn bet-sizing and opponent ranges, but for now, it is only available to human players.
+            <br>
+            We published it to Heroku here: <a href="https://poker831.herokuapp.com/">https://poker831.herokuapp.com/</a>
+            <br>
+            Check out the code here: <a href="https://github.com/sevdeawesome/831poker">https://github.com/sevdeawesome/831poker</a>
+          </p>
         </div>
       </div>
     </div>
@@ -140,13 +205,13 @@
 <br><br><br>
 <div class="container">
     <div class="row">
-      <h1 class="title">About Me</h1>
-      <br>
+      
       <!-- <div class="col-md-2"></div> -->
       <div class="col-md-6">
         <center><img src="img/37_COMPRESSED.jpg" class="img2"></center>
       </div>
         <div class="col-md-6">
+          <h1 class="title">About Me</h1>
             <h2 class="subtext">That handsome devil? That's me. You're probably wondering how I got here. 
               I'm a guy who likes to code, learn, and experiment with machine learning. 
               I recently graduated from the University of California, Riverside. </h2>
