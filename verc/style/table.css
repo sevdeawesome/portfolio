@@ -69,6 +69,15 @@ ul .active{
 #mobilemenu{
     display: none;
 }
+
+@media only screen and (max-width: 700px) {
+    #mobilemenu{
+        display: block;
+    }
+    #desktopmenu{
+        display: none;
+    }
+  }
 .img{
     width:90%;
 }
