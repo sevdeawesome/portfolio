@@ -46,3 +46,16 @@ p{
 .img2{
     width: 50%;
 }
+
+#mobileonly{
+    display: none;
+}
+
+@media only screen and (max-width: 700px) {
+    #mobileonly{
+        display: block;
+    }
+    #desktoponly{
+        display: none;
+    }
+  }

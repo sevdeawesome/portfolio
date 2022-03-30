@@ -44,9 +44,17 @@ const asteroidGeometry = new THREE.SphereGeometry(3, 50, 50);
 let asteroid = new THREE.Mesh(asteroidGeometry, asteroidMaterial);
 scene.add(asteroid);
 
+let width = screen.width;
 
-asteroid.position.x = 5;
-asteroid.position.y = 0;
+if(width > 800){
+  asteroid.position.x = 5;
+  asteroid.position.y = 0;
+}
+else{
+  asteroid.position.y = 4.5;
+  asteroid.position.z = -25;
+  light.position.set( -30, 0, 15);
+}
 
 
 
