@@ -35,7 +35,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- BOOTSTRAP BORDERS FOR TESTING -->
     <!-- <link href="style/bootstrap-borders.css" rel="stylesheet" type="text/css"> -->
-
+    <script src="js/asteroid.js" type="module"></script>
+    <script src="js/modal.js" type="module"></script>
     
     <title>Severin Field Portfolio</title>
 </head>
@@ -45,6 +46,25 @@
 <div class="stars"></div>
 <div class="twinkling"></div>
 
+
+<!-- modal -->
+<center>
+  <div class="modal in" id="viewImg" tabindex="-1" role="dialog" style="display: none;">
+    <div class="modal-dialog modal-lg" style="width: 100%">
+      <div class="modal-content" style="width: 100%">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+          <h4 class="modal-title">View Image</h4>
+        </div>
+        <div class="modal-body">
+          <div id="imgViewer" style="overflow-x: scroll;">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</center>
+
 <div id="hero">
     <canvas id="bg"></canvas>
 
@@ -52,7 +72,10 @@
        
         <div class="col-md-6 col-sm-10 height">
             <div class="row mt-5"><h1 class="title">Severin Field</h1>
-                <h2 class="subtext">B.S. Physics from University of California, Riverside</h2>
+                <h2 class="subtext">B.S. Physics from University of California, Riverside. 
+                  Graduated in Winter 2022.
+
+                </h2>
             </div>
 
             <div class="row bottom" id="desktoponly">
@@ -71,7 +94,9 @@
 
 <div id="work" class="container">
     <h1 class="title">My Work</h1>
-    <h2 class="subtext">From Latest to Oldest</h2>
+    <h2 class="subtext">
+        Here are some of my recent projects.
+    </h2>
 
     <br>
 
@@ -155,7 +180,12 @@
              
               <br>
               <h3>Poster Presented at LIGO's international yearly conference</h3>
-              <center><img src="img/lvk.png" class="img"></center>
+              <center><img src="img/lvk.png" class="img enlargable"></center>
+
+              
+
+
+
             </div>
             
           </div>
@@ -195,11 +225,11 @@
                 In a team of 4 undergraduate students, a graduate student, and a Lawrence Livermore Mentor, we solved two machine learning problems and gave a presentation on our results. The projects included cleaning data (set of images in this case), normalizing data, wrangling data, extensive EDA, training and testing various machine learning models, and finally creating meaningful visuals of our results.
                 <br>  
                 <b>Problem 1: </b>Our first problem was given a supervised learning dataset of images of nebulae (either galaxies or stars), create a neural network to classify galaxies and stars. The data has 4 channels for different bandwidths from optical filters, so we also identified which wavelengths galaxies and stars emitted the most light and trained models for each photometric band and subset of bands. 
-                <br><img src="img/DSC.png" class="img3"><br><br>
+                <br><img src="img/DSC.png" class="img3 enlargable"><br><br>
                 Figure 1. The data set has 4 channels for different bandwidths from optical filters. This is the what the processed data looks like.
                 <br><br>
                 <b>Problem 2:  </b> Given a dataset of injected asteroids on images from the Keck Observatory, we created multiple image classifying models to spot asteroids hidden in unlabeled data. Our result was a neural network with around a 97% accuracy in spotting asteroids in unseen testing data. 
-                <br><img src="img/dsc.gif" class="img3"><br><br>
+                <br><img src="img/dsc.gif" class="img3 enlargable"><br><br>
                 Figure 2. A gif I created showing the sliding window over a large image of space, where the network was able to spot asteroids.
               </p>
               
@@ -215,7 +245,7 @@
         <!--! CS PROJECTS -->
         <div id="menu2" class="tab-pane fade padding">
           <h1>
-            Relevant Computer Science School Projects
+            Relevant Computer Science Projects
           </h1>
             <h3>A* Search</h3>
             <p>
@@ -252,7 +282,11 @@
           <img src="img/831poker.png" class="img3">
 
           <h1>831Poker</h1>
-          <p>My friends and I regularly play poker and the beginning of the pandemic threw a wrench in our weekly games. Since we didn’t want to pay for rake or premiums from poker websites, one of my friends and I created our own. Our app is a functioning multiplayer poker website with true RNG dealing, a fully integrated chat app, and multiple lobbies/games for scalability. We built it using Node.JS, vanilla javascript and used express/socket IO to handle bidirectional requests. We’re now considering creating bot opponents that can learn bet-sizing and opponent ranges, but for now, it is only available to human players.
+          <p>My friends and I regularly play poker and the beginning of the pandemic threw a wrench in our weekly games. 
+            Since we didn’t want to pay for rake or premiums from poker websites, one of my friends and I created our own. 
+            Our app is a functioning multiplayer poker website with true RNG dealing, a fully integrated chat app, and multiple lobbies/games for scalability. 
+            We built it using Node.JS, vanilla javascript and used express/socket IO to handle bidirectional requests. 
+            We’re now considering creating bot opponents that can learn bet-sizing and opponent ranges, but for now, it is only available to human players.
             <br>
             We published it to Heroku here: <a href="https://poker831.herokuapp.com/">https://poker831.herokuapp.com/</a>
             <br>
@@ -366,7 +400,7 @@
 
 <!-- JavaScript scripts -->
 
-<script src="js/asteroid.js" type="module"></script>
+
 
 <!-- <script src="js/herobackground.js"></script> -->
 </body>
