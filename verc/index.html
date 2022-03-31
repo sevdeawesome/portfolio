@@ -55,7 +55,7 @@
                 <h2 class="subtext">B.S. Physics from University of California, Riverside</h2>
             </div>
 
-            <div class="row bottom">
+            <div class="row bottom" id="desktoponly">
                 <h2 class="subtext">
                   I'm motivated by the future of Machine Learning and Artificial Intelligence. 
                   My experience includes working with data science teams to build and deploy ML pipelines.
@@ -86,12 +86,12 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">
             Other <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a data-toggle="tab" href="#menu4">Physics Research</a></li>
-              <li><a data-toggle="tab" href="#menu4">Minecraft Modding</a></li>
-              <li><a data-toggle="tab" href="#menu4">Discord Bots</a></li>
-              <li><a data-toggle="tab" href="#menu4">Web Design</a></li>
-              <li><a data-toggle="tab" href="#menu4">Algorithmic Trading</a></li>
-              <li><a data-toggle="tab" href="#menu4">Sevnet</a></li>                        
+              <li><a data-toggle="tab" href="#menu4">Physics Experiments</a></li>
+              <li><a data-toggle="tab" href="#menu6">Minecraft Modding</a></li>
+              <li><a data-toggle="tab" href="#menu5">Discord Bots</a></li>
+              <li><a data-toggle="tab" href="#menu5">Web Design</a></li>
+              <li><a data-toggle="tab" href="#menu5">Algorithmic Trading</a></li>
+              <li><a data-toggle="tab" href="#menu5">Sevnet</a></li>                        
             </ul>
           </li>
       </ul>
@@ -100,16 +100,25 @@
           <a class="dropdown-toggle active" data-toggle="dropdown" href="#">
             Menu <span class="caret"></span></a>
             <ul class="dropdown-menu" role="menu">
-              <li><a data-toggle="tab" href="#menu4">Physics Research</a></li>
-              <li><a data-toggle="tab" href="#menu4">Minecraft Modding</a></li>
-              <li><a data-toggle="tab" href="#menu4">Discord Bots</a></li>
-              <li><a data-toggle="tab" href="#menu4">Web Design</a></li>
-              <li><a data-toggle="tab" href="#menu4">Algorithmic Trading</a></li>
-              <li><a data-toggle="tab" href="#menu4">Sevnet</a></li>                        
+              <li><a data-toggle="tab" href="#home">LIGO</a></li>
+              <li><a data-toggle="tab" href="#menu1">LLNL</a></li>
+              <li><a data-toggle="tab" href="#menu2">CS Projects</a></li>
+              <li><a data-toggle="tab" href="#menu3">831Poker</a></li>
+              <li><a data-toggle="tab" href="#menu6">Minecraft Modding</a></li>
+              <li><a data-toggle="tab" href="#menu5">Physics</a></li>
+              <li><a data-toggle="tab" href="#menu5">Discord Bots</a></li>
+              <li><a data-toggle="tab" href="#menu5">Web Design</a></li>
+              <li><a data-toggle="tab" href="#menu5">Algorithmic Trading</a></li>
+              <li><a data-toggle="tab" href="#menu5">Sevnet</a></li>                        
             </ul>
           </li>
       </ul>
       <div class="tab-content">
+
+
+        <!-- !LIGO -->
+        <!-- !LIGO -->
+        <!-- !LIGO -->
         <div id="home" class="tab-pane fade in active">
           <div class="row">
             <div class="col-md-12">
@@ -128,7 +137,16 @@
             </div>
             <div class="col-md-8 col-sm-10">
               <h1>Machine Learning Based Clustering of Auxiliary Channels at LIGO</h1>
-              <p>In a project supervised by Dr. Richardson PhD, Dr. Papalexakis PhD, Rutuja Gurav, a PhD student, and the help of Dr. Barry Barish PhD, I created a machine learning based tool to detect anomalous behavior in the hundreds of LIGO auxiliary channels. Stationed along the 4km long interferometer’s arms are all types of noise detectors - for example, microphones, seismometers, accelerometers and ground motion sensors. </p>
+                <p>
+                  In a project for LIGO, I worked with a team of researchers to develop a machine learning algorithm that would cluster time-series data from the LIGO Auxiliary channels.
+                  Each hour has a different number of clusters and sometimes individual channels would switch clusters. 
+                  We first plotted created a tool/pipeline to determine how k*, the optimal number of clusters, evolved over time.
+                    We then created a tool to normalize cluster labels to see when an individual channel switches between normalized clusters.
+                    This process involved an algorithm called hungarian matching to map the cluster labels. 
+                    The goal was to use this to predict anomalous behavior in individual channels, by seeing when it swapped into or out of a conserved pattern. 
+                  The algorithm was tested on the data from the LIGO Auxiliary channels. The results were presented at LIGO’s annual international Virgo Kagra meeting.
+                </p>
+             
               <br>
               <h3>Poster Presented at LIGO's international yearly conference</h3>
               <center><img src="img/lvk.png" class="img"></center>
@@ -137,6 +155,11 @@
           </div>
           
         </div>
+
+
+        <!-- !LLNL -->
+        <!-- !LLNL -->
+        <!-- !LLNL -->
         <div id="menu1" class="tab-pane fade in">
           <div class="row">
             <div class="col-md-12">
@@ -173,6 +196,10 @@
           
         </div>
         
+
+        <!-- !CS PROJECTS -->
+        <!--! CS PROJECTS -->
+        <!--! CS PROJECTS -->
         <div id="menu2" class="tab-pane fade padding">
           <h1>
             Relevant Computer Science School Projects
@@ -203,6 +230,11 @@
             <br>Github link: <a href="https://github.com/sevdeawesome/monte_carlo_triangle">https://github.com/sevdeawesome/monte_carlo_triangle</a>
           </p>
         </div>
+
+        <!--!831Poker  -->
+        <!--!831Poker  -->
+        <!--!831Poker  -->
+
         <div id="menu3" class="tab-pane fade padding">
           <img src="img/831poker.png" class="img3">
 
@@ -214,8 +246,65 @@
             Check out the code here: <a href="https://github.com/sevdeawesome/831poker">https://github.com/sevdeawesome/831poker</a>
           </p>
         </div>
+
+
+
+        <!-- !PHYYSICS -->
+        <!-- !PHYYSICS -->
+        <!-- !PHYYSICS -->
         <div id="menu4" class="tab-pane fade padding">
+       
+            <h1>A couple noteworthy physics experiments I did in college.</h1>
+            
+              <ol>
+                <li><p>
+                  One of my first experiments was experimentally calculating the charge of an electron and Boltzmann's constant
+                   by measuring a resistors noise dependence on temperature and voltage.
+                    
+                </p></li>
+                  <li><p>The second experiment was creating holograms with a high powered HeNe laser - a virtual image seen by recording an interference pattern
+                    onto a photoplate. </p></li>
+                <li><p>Another experiment worth mentioning included identifying decay schemes of radioactive isobars with python.</p></li>
+              </ol>
+
+              
+                <a href="physics/noise.pdf">Using Noise to Calculate the Charge of an Electron</a><br>
+                <a href="physics/holography.pdf">Creating a Hologram with a High Powered HeNe Laser</a><br>
+                <a href="physics/noise.pdf">Classifying radioactive isobars</a>
+              
+              
+           
+        
+        </div>
+
+
+      <!-- !ADD SOON -->
+      <!-- !ADD SOON -->
+      <!-- !ADD SOON -->
+        <div id="menu5" class="tab-pane fade padding">
           <h1>I will add this section soon</h1>
+        </div>
+
+
+      <!-- !MINECRAFT MODDING -->
+      <!-- !MINECRAFT MODDING -->
+      <!-- !MINECRAFT MODDING -->
+        <div id="menu6" class="tab-pane fade padding">
+          <h1>Minecraft Modding</h1>
+          <p>Throughout highschool, some friends and I created multiple minecraft mods and modpacks and operated multiple public servers. 
+            My mods received over 100,000 unique downloads and became quite popular.
+            <br>
+            Below are examples of the trailers I created for my mods. I will add to this section soon.
+          </p>
+
+          <div class="row">
+            <div class="col-md-6">
+              <iframe width="100%" height="315px" src="https://www.youtube.com/embed/zfzb5SsoI_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+              <iframe width="100%" height="315px" src="https://www.youtube.com/embed/U4_IwLWkQ3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -233,7 +322,7 @@
           <h1 class="title">About Me</h1>
             <h2 class="subtext">
               I recently graduated from the University of California, Riverside where I studied Physics with a concentration in Computer Science.
-               I am a budding developer and data scientist. I am interested in machine learning, data science, and web development.
+               I am most familiar with object oriented programming languages such as JavaScript, C++, and Python and I'm learning machine learning and data science with Python.
              </h2>
         </div>
     </div>
