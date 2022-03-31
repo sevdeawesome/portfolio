@@ -146,11 +146,10 @@
               <h1>Machine Learning Based Clustering of Auxiliary Channels at LIGO</h1>
                 <p>
                   In a project for LIGO, I worked with a team of researchers to develop a machine learning algorithm that would cluster time-series data from the LIGO Auxiliary channels.
-                  Each hour has a different number of clusters and sometimes individual channels would switch clusters. 
-                  We first plotted created a tool/pipeline to determine how k*, the optimal number of clusters, evolved over time.
-                    We then created a tool to normalize cluster labels to see when an individual channel switches between normalized clusters.
-                    This process involved an algorithm called hungarian matching to map the cluster labels. 
-                    The goal was to use this to predict anomalous behavior in individual channels, by seeing when it swapped into or out of a conserved pattern. 
+                  In this work we proposed to successively apply k-means clustering to data from non-overlapping windows of a set of sensors over a period of time to find groups of similar sensors.
+                   We employ Hungarian Algorithm for centroid matching between two independent runs of clustering to obtain approximately consistent set of cluster labels over the whole period. 
+                  Consequent windows of time where a sensor switches membership from one cluster to another may point to a change in the sensor's data and hint towards some emergent behaviour in a certain part of the complex system.
+                    The goal was to use this to predict anomalous behavior in individual channels, by seeing when it swapped into or out of a conserved pattern (a cluster). 
                   The algorithm was tested on the data from the LIGO Auxiliary channels. The results were presented at LIGO’s annual international Virgo Kagra meeting.
                 </p>
              
