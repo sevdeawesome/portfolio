@@ -51,7 +51,7 @@ if(width > 800){
   asteroid.position.y = 0;
 }
 else{
-  asteroid.position.y = 1;
+  asteroid.position.y = 0;
   asteroid.position.z = -25;
   asteroid.position.x = 0;
   light.position.set( -30, 0, 15);
