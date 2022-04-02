@@ -44,7 +44,9 @@ p{
 /* about me section */
 
 .img2{
-    width: 50%;
+    width: 60%;
+    /* give the image a large white shadow */
+    /* box-shadow: 0px 0px 5px hotpink; */
 }
 
 #mobileonly{

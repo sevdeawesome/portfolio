@@ -69,7 +69,7 @@ function animate(){
     requestAnimationFrame(animate);
     renderer.render(scene, camera);
     asteroid.rotation.x += .001
-    asteroid.rotation.y += .01
+    asteroid.rotation.y += .005
 
     // move the light in a circle around the asteroid
     // light.position.x = Math.sin(Date.now() * 0.001) * 50;
