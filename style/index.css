@@ -6,58 +6,60 @@ body{
     font-family: 'Roboto', 'Arial', sans-serif !important;
     overflow-x: hidden;
     color: white !important;
+
 }
 
 .subtext{
     margin-top: -2px !important;
-}
-body{
+    font-size: 2.5em;
     font-family: 'Gothic A1', sans-serif;
-    font-weight: 200;
+    font-weight: 200 !important;
+    /* color: rgb(245, 41, 0); */
+    color: red !important;
 }
+.subtext a{
+    color: white;
+}
+
+
+
 .title{
     font-family: 'Gothic A1', sans-serif;
     font-weight: 700;
-}
-.subtext{
-    font-family: 'Gothic A1', sans-serif;
-    font-weight: 200 !important;
-    /* color: red !important; */
+    /* make the font twice as big */
+    font-size: 4em;
 }
 h3{
     font-family: 'Gothic A1', sans-serif;
-    font-weight: bold !important;
+    /* font-weight: bold !important; */
 }
 p{
-    font-family: 'Gothic A1', sans-serif;
+    /* font-family: 'Gothic A1', sans-serif; */
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+
     font-weight: 400 !important;
     font-size: large;
     /* color: red !important; */
 }
 
-
-
-
-
-
-
-/* about me section */
-
-.img2{
-    width: 60%;
-    /* give the image a large white shadow */
-    /* box-shadow: 0px 0px 5px hotpink; */
+.container{
+    margin: 30px;
 }
 
-#mobileonly{
-    display: none;
+.img{
+    max-width: 90%;
 }
 
-@media only screen and (max-width: 700px) {
-    #mobileonly{
-        display: block;
-    }
-    #desktoponly{
-        display: none;
-    }
-  }
+.img-wrapper::after {
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+
+    font-weight: 400 !important;
+    font-size: large;
+    content: 'Click Image To View Full Size';
+    display: block;
+}
+
+.enlargable:hover{
+    cursor: pointer;
+}
+
