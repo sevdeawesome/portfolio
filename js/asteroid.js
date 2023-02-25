@@ -6,18 +6,19 @@ import * as THREE from 'https://cdn.skypack.dev/three@0.138.2';
 
 const scene = new THREE.Scene();
 
-const camera = new THREE.PerspectiveCamera(20, window.innerWidth / window.innerHeight, 0.01, 1000)
+const camera = new THREE.PerspectiveCamera(20, 1, 0.01, 1000)
+// parameters for camera: field of view, aspect ratio, near clipping plane, far clipping plane
 
 const renderer = new THREE.WebGLRenderer({
-  canvas: document.querySelector('#bg'),
+  canvas: document.querySelector('canvas'),
   alpha: true,
     antialias: true
 });
 
-renderer.setPixelRatio(window.devicePixelRatio);
+// renderer.setPixelRatio(window.devicePixelRatio);
 
-renderer.setSize(window.innerWidth, window.innerHeight);
-camera.position.setZ(35);
+renderer.setSize(300, 300);
+camera.position.setZ(20);
 // camera.position.setX(7);
 
 renderer.render(scene, camera);

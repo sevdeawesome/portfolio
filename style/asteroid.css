@@ -1,8 +1,17 @@
 
 
 canvas{
-    position: absolute;
+    /* position: absolute; */
+    /* float: right; */
     top: 0;
-    left: 0;
+    right: 0;
     z-index: 999;
+    /* border: 2px solid red; */
+  }
+
+  /* if screen size is LARGE (not mobile), float right */
+  @media only screen and (min-width: 700px) {
+    canvas{
+      float: right;
+    }
   }
