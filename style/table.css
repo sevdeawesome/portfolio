@@ -1,123 +1,28 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
-
-.table{
-    background: transparent;
-}
-
-.whitespace{
-    height: 50px;
-    background-color: red;
-    z-index: 999;
-    
-    
-}
 .tab-content{
-    background-color: white;
-    color: black;
-    margin:0;
-    /* border: 1px white solid; */
-    padding: 10px;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-    border-top-right-radius: 7px;
-    /* border=tp */
-}
-
-.table li a{
-    color: black !important;
-    background: lightgrey;
-    font-size: large;
-    /* padding-top: 0; */
-    /* padding-bottom: 100px; */
-    text-transform: uppercase;
-    /* monserrat font */
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 200;
-    padding-top: 3px !important;
-    padding-left: 34px !important;
-    padding-right: 34px !important;
-    
-}
-
-.nav-tabs{
-    border:none !important;
-    margin-bottom: -5px !important;
-    z-index: -5 !important;
-}
-
-ul .active{
-    z-index: 9999 !important;
-}
-.nav li{
-    margin-bottom: -5px !important;
-}
-
-
-
-.tab-content{
-    position: relative;
-    border: 2px solid black;
-    z-index: 99 !important;
-}
-
-
-
-.justify-content-center{
-    justify-content: center !important;
     padding: 20px;
-}
-
-
-
-#mobilemenu{
-    display: none;
-}
-
-
-.img{
-    width:90%;
-}
-.topimg{
-    width:100%;
-    max-height: 300px;
-    object-fit: cover;
-}
-.img3{
-    width: 100%;
-}
-
-.padding{
-    padding: 35px;
-}
-
-@media only screen and (max-width: 700px) {
-    #mobilemenu{
-        display: block;
-    }
-    #desktopmenu{
-        display: none;
-    }
-    .padding{
-        padding: 0px !important;
-    }
-  }
-.img-wrapper::after {
-    font-size: 12px;
-    content: 'Click Image To View Full Size';
-    display: block;
-}
-
-
-#imgViewer::-webkit-scrollbar {
-    -webkit-appearance: none;
-    height: 10px;
-}
-#imgViewer::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    background-color: rgba(0,0,0,.5);
-    box-shadow: 0 0 1px rgba(255,255,255,.5);
+
+}
+#desktopmenu .active a {
+    background-color:  white;
+    color: black;
+  }
+  
+#desktopmenu a{
+    font-size: 25px;
+    color: white;
 }
 
-.enlargable:hover{
-     cursor: pointer;
+#desktopmenu a:hover{
+    /* font-size: 40px; */
+    background-color: rgba(149, 149, 149,.5);
+}
+
+#desktopmenu .dropdown-menu{
+    background-color: black;
+    color: black;
+    margin: 0;
 }

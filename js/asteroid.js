@@ -47,8 +47,9 @@ scene.add(asteroid);
 let width = screen.width;
 
 if(width > 800){
-  asteroid.position.x = 5;
+  asteroid.position.x = 0;
   asteroid.position.y = 0;
+  asteroid.position.z = 0;
 }
 else{
   asteroid.position.y = 0;

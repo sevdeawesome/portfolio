@@ -19,7 +19,6 @@
 
 
     <link href="style/index.css" rel="stylesheet" type="text/css">
-    <link href="style/hero.css" rel="stylesheet" type="text/css">
     <!-- import asteroid.css in the style folder -->
     <link href="style/asteroid.css" rel="stylesheet" type="text/css">
     <!-- import stars.css from the style folder -->
@@ -36,7 +35,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- BOOTSTRAP BORDERS FOR TESTING -->
     <!-- <link href="style/bootstrap-borders.css" rel="stylesheet" type="text/css"> -->
-    <script src="js/asteroid.js" type="module"></script>
     <script src="js/modal.js" type="module"></script>
     
     <title>Severin Field Portfolio</title>
@@ -66,381 +64,256 @@
   </div>
 </center>
 
-<div id="hero">
-    <canvas id="bg"></canvas>
-
-    <div class="container" id="herotitle">
+<!-- <div id="hero"> -->
+    <!-- <canvas id="bg"></canvas> -->
+    <br>
+    <div class="container">
        
         <div class="col-md-6 col-sm-10 height">
-            <div class="row mt-5"><h1 class="title">Severin Field</h1>
-                <h2 class="subtext">B.S. Physics from University of California, Riverside. 
-                  Graduated in Winter 2022.
+            <div class="row mt-5"><h1 class="title">> Severin Field</h1>
+              <h2 class="subtext">
 
-                </h2>
+                <a href="https://www.linkedin.com/in/severin-field-3b2960165/" target="_blank"><i class="fa fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/sevdeawesome"><i class="fa fa-github"></i></a>   
+                <a target="sfiel003@ucr.edu" href="mailto:sfiel003@ucr.edu"><i class="fa fa-envelope"></i></a>  
+              </h2>
             </div>
 
-            <div class="row bottom" id="desktoponly">
-                <h2 class="subtext">
-                  I'm motivated by the future of machine learning and ethics in data science.
-                  My experience includes working with data science teams to build and deploy ML pipelines.
-                  </h2>
-            </div>
+           
             
         </div>
         
         
     </div>
 </div>
-
+<br>
 
 <div id="work" class="container">
     <h1 class="title">My Work</h1>
-    <h2 class="subtext">
-        Here are some of my recent projects.
-    </h2>
-
-    <br>
+   
 
 
     <div class="table">
-    <ul class="nav nav-tabs" id="desktopmenu">
-        <li class="active"><a data-toggle="tab" href="#home">LIGO</a></li>
-        <li><a data-toggle="tab" href="#menu1">LLNL</a></li>
-        <li><a data-toggle="tab" href="#menu2">CS Projects</a></li>
-        <li><a data-toggle="tab" href="#menu3">831Poker</a></li>
-        <li class="dropdown" > <!--id="mobilemenu"-->
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-            Other <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a data-toggle="tab" href="#menu4">Physics Experiments</a></li>
-              <li><a data-toggle="tab" href="#menu6">Minecraft Modding</a></li>
-              <!-- <li><a data-toggle="tab" href="#menu5">Discord Bots</a></li> -->
-              <li><a data-toggle="tab" href="#menu5">Web Design</a></li>
-              <!-- <li><a data-toggle="tab" href="#menu5">Algorithmic Trading</a></li>
-              <li><a data-toggle="tab" href="#menu5">Sevnet</a></li>                         -->
-            </ul>
-          </li>
-      </ul>
-      <ul class="nav nav-tabs" id="mobilemenu">
-        <li class="dropdown" > <!--id="mobilemenu"-->
-          <a class="dropdown-toggle active" data-toggle="dropdown" href="#">
-            Menu <span class="caret"></span></a>
-            <ul class="dropdown-menu" role="menu">
-              <li><a data-toggle="tab" href="#home">LIGO</a></li>
-              <li><a data-toggle="tab" href="#menu1">LLNL</a></li>
-              <li><a data-toggle="tab" href="#menu2">CS Projects</a></li>
-              <li><a data-toggle="tab" href="#menu3">831Poker</a></li>
-              <li><a data-toggle="tab" href="#menu6">Minecraft Modding</a></li>
-              <li><a data-toggle="tab" href="#menu5">Physics</a></li>
-              <!-- <li><a data-toggle="tab" href="#menu5">Discord Bots</a></li> -->
-              <li><a data-toggle="tab" href="#menu5">Web Design</a></li>
-              <!-- <li><a data-toggle="tab" href="#menu5">Algorithmic Trading</a></li> -->
-              <!-- <li><a data-toggle="tab" href="#menu5">Sevnet</a></li>                         -->
-            </ul>
-          </li>
-      </ul>
-      <div class="tab-content">
-
-
-        <!-- !LIGO -->
-        <!-- !LIGO -->
-        <!-- !LIGO -->
-        <div id="home" class="tab-pane fade in active padding">
-          <div class="row">
-            <div class="col-md-12">
-              <center><img src="img/gw-merger.jpg" class="topimg"></center>
-            </div>
-          </div>
-          <br>
-          <div class="row justify-content-center">
-            
-            <div class="col-md-4 col-sm-10">
-              <div class="row">
-                <h3>Background</h3>
-                <p>
-                  The Laser Interferometer Gravitational Wave Observatory (LIGO) is an organization that operates multiple 4km long michelson interferometers to detect gravitational waves. It is the most precise measuring tool ever created. 
-                  In 2017, Dr. Barry Barish, a UCR faculty member, won the Nobel prize in physics for leading a team at LIGO to detect a gravitational wave for the first time.
-                   Most LIGO research, like mine, is on finding ways to improve the detectors sensitivity to see more gravitational wave causing events (like black hole mergers or supernovae) further out in spacetime.
-  
-                </p>
-              </div>
-              <div class="row">
-                <h3>Tools Used:</h3>
-                <p>Git, python, CUDA, numpy, pandas, sklearn, Jupyter Notebooks, bash scripting
-                  </p>
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-10">
-              <h1>Machine Learning Based Clustering of Auxiliary Channels at LIGO</h1>
-                <p>
-                  In a project for LIGO, I worked with a team of researchers to develop a machine learning algorithm that would cluster time-series data from the LIGO Auxiliary channels.
-                  In this work we proposed to successively apply k-means clustering to data from non-overlapping windows of a set of sensors over a period of time to find groups of similar sensors.
-                   We employ Hungarian Algorithm for centroid matching between two independent runs of clustering to obtain approximately consistent set of cluster labels over the whole period. 
-                  Consequent windows of time where a sensor switches membership from one cluster to another may point to a change in the sensor's data and hint towards some emergent behaviour in a certain part of the complex system.
-                    The goal was to use this to predict anomalous behavior in individual channels, by seeing when it swapped into or out of a conserved recurring pattern. 
-                  The algorithm was tested on the data from the LIGO Auxiliary channels. The results were presented at LIGO’s annual international Virgo Kagra meeting.
-                </p>
-             
-              <br>
-              <h3>Poster Presented at LIGO's international yearly conference</h3>
-              <center><img src="img/lvk.png" class="img enlargable"></center>
-
-              
-
-
-
-            </div>
-            
-          </div>
-          
-        </div>
-
-
-        <!-- !LLNL -->
-        <!-- !LLNL -->
-        <!-- !LLNL -->
-        <div id="menu1" class="tab-pane fade in padding">
-          <div class="row">
-            <div class="col-md-12">
-              <br>
-              <center><img src="img/llnl.png" class="img2"></center>
-            </div>
-          </div>
-          <br>
-          <div class="row justify-content-center">
-            
-            <div class="col-md-4 col-sm-10">
-              <div class="row">
-                <h3>Background</h3>
-                <p>
-                  Lawrence Livermore National Laboratory is a Department of Energy lab in San Francisco. In the summer of 2021, the Data Science Institute hosted a summer internship for UC Riverside students where students worked in teams on two machine learning astrophysics problems and attend seminars given by researchers on their projects. 
-                </p>
-              </div>
-              <div class="row">
-                <h3>Tools Used:</h3>
-                <p>Git, python, tensorFlow, Pytorch, numpy, pandas, sklearn, Jupyter Notebooks, bash scripting
-                  </p>
-              </div>
-            </div>
-            <div class="col-md-8 col-sm-10">
-              <h1>LLNL Data Science Challenge</h1>
-              <p>
-                In a team of 4 undergraduate students, a graduate student, and a Lawrence Livermore Mentor, we solved two machine learning problems and gave a presentation on our results. The projects included cleaning data (set of images in this case), normalizing data, wrangling data, extensive EDA, training and testing various machine learning models, and finally creating meaningful visuals of our results.
-                <br>  <br> 
-                <b>Problem 1: </b>Our first problem was given a supervised learning dataset of images of nebulae (either galaxies or stars), create a neural network to classify galaxies and stars. The data has 4 channels for different bandwidths from optical filters, so we also identified which wavelengths galaxies and stars emitted the most light and trained models for each photometric band and subset of bands. 
-                <br><img src="img/DSC.png" class="img3 enlargable"><br><br>
-                Figure 1. The data set has 4 channels for different bandwidths from optical filters. This is the what the processed data looks like.
-                <br><br>
-                <b>Problem 2:  </b> Given a dataset of injected asteroids on images from the Keck Observatory, we created multiple image classifying models to spot asteroids hidden in unlabeled data. Our result was a neural network with around a 97% accuracy in spotting asteroids in unseen testing data. 
-                <br><img src="img/dsc.gif" class="img3 enlargable"><br><br>
-                Figure 2. A gif I created showing the sliding window over a large image of space, where the network was able to spot asteroids.
-              </p>
-              
-            </div>
-            
-          </div>
-          
-        </div>
-        
-
-        <!-- !CS PROJECTS -->
-        <!--! CS PROJECTS -->
-        <!--! CS PROJECTS -->
-        <div id="menu2" class="tab-pane fade padding">
-          <h1>
-            Relevant Computer Science Projects
-          </h1>
-            <h3>A* Search</h3>
-            <p>
-            Search is a well known, ubiquitous tool in computer science and in data science. A* search is a search algorithm that adds unvisited nodes to a queue in order of a value f(n) -a heuristic distance measure- that assesses how close it is to the solution while considering how far it is from the start. f(n) is the sum of h(n), the value of a heuristic that is created by the programmer and g(n), the distance from the starting node. Since this algorithm is optimal and complete, the only way to create a better search is to create better heuristics for assigning f(n). I used multiple different heuristics to solve the 8 puzzle, comparing their runtime and storage complexity. 
-            <br>More information can be found at: <a target="_blank" href="https://github.com/sevdeawesome/A-Star-Search">https://github.com/sevdeawesome/A-Star-Search</a>
-          </p>
-
-
-            <h3>Feature Selection</h3>
-            <p> 
-            Often times data has many irrelevant features and irrelevant information. The curse of dimensionality suggests that simple, cleaner data can provide more information than the same data with irrelevant information included. In a project for an Artificial Intelligence course at UC Riverside, I made a tool that finds the optimal subset of features when using a simple k-means classification model on a dataset of supervised machine learning data. 
-            <br>More info can be found at: <a target="_blank" href="https://github.com/sevdeawesome/Feature-Selection">https://github.com/sevdeawesome/Feature-Selection</a>
-              </p>
-
-
-           <h3> Networking App</h3>
-           <p>
-            In a class project for Database Management, a classmate and I created a Java social networking app connected to an SQL database of user and connection information.
-            <br>More info can be found at: <a target="_blank" href=" https://github.com/sevdeawesome/Networking-App"> https://github.com/sevdeawesome/Networking-App</a>
-            </p>
-
-             
-            <h3> Calendar App</h3>
-           <p>
-            In a class project for Software Construction, two classmates and I created a Java calendar app that allows users to create, edit, and delete events. 
-            The project was focused on design patterns, scrum/agile and learning how to use git and implement automatic testing. We split the projects into three components,
-            each with a separate design pattern and used tools like kanban boards and github issues to track progress.
-            <br>More info can be found at: <a target="_blank" href=" https://github.com/sevdeawesome/C-Calendar"> https://github.com/sevdeawesome/C-Calendar</a>
-            </p>
-
-
-           <h3> Monte Carlo Problem</h3>
-           <p>
-            Imagine you were to create an equilateral triangle and pick a point randomly on each edge. What is the probability that the point in the center of the large triangle is within the sub-triangle created by the three random points? For an extra credit assignment in an Artificial Intelligence class, I created a quick tool to solve an interesting problem that our professor called “the triangle problem” using the Monte Carlo statistical method because there is no immediately straightforward method to solve this probability without an estimate. The Monte Carlo method is the use of repeated random sampling to obtain a statistical estimate of probability. 
-            Though this was a very simple and short project, I believe this is a very powerful tool in a wide range of machine learning problems and thought it would be interesting to include in this section. 
-            <br>Github link: <a target="_blank" href="https://github.com/sevdeawesome/monte_carlo_triangle">https://github.com/sevdeawesome/monte_carlo_triangle</a>
-          </p>
-
-
-
-        </div>
-
-        <!--!831Poker  -->
-        <!--!831Poker  -->
-        <!--!831Poker  -->
-
-        <div id="menu3" class="tab-pane fade padding">
-          <img src="img/831poker.png" class="img3">
-
-          <h1>831Poker</h1>
-          <p>My friends and I regularly play poker and the beginning of the pandemic threw a wrench in our weekly games. 
-            Since we didn’t want to pay for rake or premiums from poker websites, one of my friends and I created our own. 
-            Our app is a functioning multiplayer poker website with true RNG dealing, a fully integrated chat app, and multiple lobbies/games for scalability. 
-            We built it using Node.JS, vanilla javascript and used express/socket IO to handle bidirectional requests. 
-            We’re now considering creating bot opponents that can learn bet-sizing and opponent ranges, but for now, it is only available to human players.
-            <br>
-            We published it to Heroku here: <a href="https://poker831.herokuapp.com/">https://poker831.herokuapp.com/</a>
-            <br>
-            Check out the code here: <a href="https://github.com/sevdeawesome/831poker">https://github.com/sevdeawesome/831poker</a>
-          </p>
-        </div>
-
-
-
-        <!-- !PHYYSICS -->
-        <!-- !PHYYSICS -->
-        <!-- !PHYYSICS -->
-        <div id="menu4" class="tab-pane fade padding">
-       
-            <h1>A couple noteworthy physics experiments I did in college.</h1>
-            
-              <ol>
-                <li><p>
-                  One of my first experiments was experimentally calculating the charge of an electron and Boltzmann's constant
-                   by measuring a resistors noise dependence on temperature and voltage.
-                    
-                </p></li>
-                  <li><p>The second experiment was creating holograms with a high powered HeNe laser - a virtual image seen by recording an interference pattern
-                    onto a photoplate. </p></li>
-                <li><p>Another experiment worth mentioning included identifying decay schemes of radioactive isobars with python.</p></li>
-              </ol>
-
-              
-                <a href="physics/noise.pdf">Using Noise to Calculate the Charge of an Electron</a><br>
-                <a href="physics/holography.pdf">Creating a Hologram with a High Powered HeNe Laser</a><br>
-                <a href="physics/noise.pdf">Classifying radioactive isobars</a>
-              
-              
-           
-        
-        </div>
-
-
-      <!-- !ADD SOON -->
-      <!-- !ADD SOON -->
-      <!-- !ADD SOON -->
-        <div id="menu5" class="tab-pane fade padding">
-          <h1>I will add this section soon</h1>
-        </div>
-
-    <!-- !WEB DESIGN -->
-      <!-- !WEB DESIGN -->
-      <!-- !WEB DESIGN -->
-        <div id="menu7" class="tab-pane fade padding">
-          <h1>Web Design</h1>
-          <p>I've worked on a few web design projects including starting a web-hosting business for local small businesses. The initial design can be seen </p>
-        </div>
-
-      <!-- !MINECRAFT MODDING -->
-      <!-- !MINECRAFT MODDING -->
-      <!-- !MINECRAFT MODDING -->
-        <div id="menu6" class="tab-pane fade padding">
-          <h1>Minecraft Modding</h1>
-          <p>Throughout highschool, some friends and I created multiple minecraft mods and modpacks and operated multiple public servers. 
-            My mods received over 100,000 unique downloads and became quite popular.
-            <br>
-            Below are examples of the trailers I created for my mods. I will add to this section soon.
-          </p>
-
-          <div class="row">
-            <div class="col-md-6">
-              <iframe width="100%" height="315px" src="https://www.youtube.com/embed/zfzb5SsoI_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-            <div class="col-md-6">
-              <iframe width="100%" height="315px" src="https://www.youtube.com/embed/U4_IwLWkQ3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-</div>
-
-<br><br><br>
-<div class="container">
-    <div class="row">
-      
-      <!-- <div class="col-md-2"></div> -->
-      <div class="col-md-5">
-        <center><img src="img/37_COMPRESSED.jpg" class="img2"></center>
-      </div>
-        <div class="col-md-7">
-          <h1 class="title">About Me</h1>
-          <br><br>
-            <h2 class="subtext subtextsmaller">
-              <!-- Take a look at that handsome devil!  -->
-              I recently graduated from the University of California, Riverside where I studied Physics with a concentration in Computer Science.
-               I am most familiar with object oriented programming languages such as JavaScript, C++, Java, and Python and I'm learning machine learning and data science with Python.
-             </h2>
-        </div>
-    </div>
-    <br><br>
+      <ul class="nav nav-pills" id="desktopmenu">
+          <li class="active"><a data-toggle="tab" href="#home">Intel</a></li>
+          <li><a data-toggle="tab" href="#menu0">LIGO</a></li>
+          <li><a data-toggle="tab" href="#menu1">LLNL</a></li>
+          <li><a data-toggle="tab" href="#menu2">CS Projects</a></li>
+          <li><a data-toggle="tab" href="#menu3">831Poker</a></li>
+          <li class="dropdown" > <!--id="mobilemenu"-->
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              Other <span class="caret"></span></a>
+              <ul class="dropdown-menu" role="menu">
+                <li><a data-toggle="tab" href="#menu4">Physics Experiments</a></li>
+                <li><a data-toggle="tab" href="#menu6">Minecraft Modding</a></li>
+                <!-- <li><a data-toggle="tab" href="#menu5">Discord Bots</a></li> -->
+                <li><a data-toggle="tab" href="#menu5">Web Design</a></li>
+                <!-- <li><a data-toggle="tab" href="#menu5">Algorithmic Trading</a></li>
+                <li><a data-toggle="tab" href="#menu5">Sevnet</a></li>                         -->
+              </ul>
+            </li>
+        </ul>
+       <br>
+        <div class="tab-content">
     
-    <div class="row">
-      <div class="col-md-5" >
+    
+          <!-- !INTEL -->
+          <!-- !INTEL -->
+          <!-- !INTEL -->
+          <div id="home" class="tab-pane fade in active padding">
+            <img src="img/intel+tf.png" style="max-width:600px">
+            <h1>AI Frameworks Engineer</h1>
+            
+            <p>At Intel, I developed a test harness and CI Pipeline for MLIR Extensions, a popular compiler infrastructure in machine learning.
+               I also performed benchmarked physics machine learning models for Argonne National Labs on Intel Max Series GPU.
+               Finally, I served as the point of contact for transitioning to GitHub Actions in AI Frameworks Team at Intel, where we worked on machine learning frameworks 
+              including Intel's Extensions for TensorFlow.</p>
+            
+          </div>
+    
+          <!-- !LIGO -->
+          <!-- !LIGO -->
+          <!-- !LIGO -->
+          <div id="menu0" class="tab-pane fade in padding">
+            <h1>Research at the Laser Interferometer Gravitational Wave Observatory</h1>
+            <p>LIGO operates 4km long interferometers to detect gravitational waves. The first GW detection earned a UCR professor, Dr. Barry Barrish, a nobel prize. 
+              I collaborated with researchers to develop an anomaly detection algorithm that clusters time-series data from LIGO auxilary channels. 
+              Our method involved generating segmented data from hundreds of physical sensors, run dynamic time warping on the data, employ k-means on time-warped data, and then using cluster matching (hungarian algorithm)
+            to monitor the cluster change events suggesting spurious behavior.</p>
+                <br>
+            <h2>Poster Presented at LIGO conference</h2>
+              <center><img src="img/lvk.png" class="img enlargable"></center>
+            
+          </div>
 
-        <center><img src="img/polo.jpg" class="img2"></center>
-        
-      </div>
-      <div class="col-md-7">
-        <h2 class="subtext subtextsmaller">I'm from Santa Cruz, CA and I spend my free time swimming, playing water polo and surfing. I was the president of the UCR Men's Water Polo Club for two years.</h2>
-      </div>
-      <!-- <div class="col-md-6" id="desktoponly">
-        <center><img src="img/polo.jpg" class="img2"></center>
-      </div> -->
-    </div>
-<br><br>
-    <div id="footer" >
 
-    <h3 class="footnote">Website created by Severin Field     <a target="_blank" href="https://github.com/sevdeawesome"><i class="fa fa-github"></i></a>   
-      <br> Contact me:  <a target="sfiel003@ucr.edu" href="mailto:sfiel003@ucr.edu"><i class="fa fa-envelope"></i></a>    <a href="https://www.linkedin.com/in/severin-field-3b2960165/" target="_blank"><i class="fa fa-linkedin"></i></a>
-      <br>
-      
-      <br>
-      <br>
-    </h3>
+          <!-- !LLNL -->
+          <!-- !LLNL -->
+          <!-- !LLNL -->
+          <div id="menu1" class="tab-pane fade in padding">
+            <h1>Lawrence Livermore National Labs Data Science Challenge</h1>
+            <p>
+              Worked in a team including undergraduates, a graduate student, and an LLNL physicist on two computer vision problems.
+              The projects included data cleaning, normalization, wrangling,
+              EDA, training, testing and contrasting various machine learning models, and creating visuals.
+              <br><br>
+              <b>Problem 1: </b>Our first problem was given a supervised learning problem where we had to classify stars vs. galaxies.
+              <br><br>Figure 1. The data set has 4 channels for different bandwidths from optical filters. 
+              <img src="img/DSC.png" class="img3 enlargable"><br><br>
+              <br>
+              <b>Problem 2:  </b> We created multiple models to spot asteroids in 
+              large images of space (using a sliding window). Achieved 97% accuracy in spotting asteroids in unseen testing data. Compared resnet, inception, GMM's, Naive Bayes, and other models.
+
+              <br><br>Figure 2. A gif I created showing the sliding window over a large image of space, where the network was able to spot asteroids.
+              <img src="img/dsc.gif" class="img3 enlargable"><br><br>
+            </p>
+          </div>
+          
+    
+          <!-- !CS PROJECTS -->
+          <!--! CS PROJECTS -->
+          <!--! CS PROJECTS -->
+          <div id="menu2" class="tab-pane fade padding">
+            <h1>
+              Some Computer Science Projects
+            </h1>
+              <h3>A* Search</h3>
+              <p>
+              Search is a well known, ubiquitous tool in computer science and in data science. 
+              I used multiple different heuristics to solve the 8 puzzle, comparing their runtime and storage complexity. 
+              <br>More information can be found at: <a target="_blank" href="https://github.com/sevdeawesome/A-Star-Search">https://github.com/sevdeawesome/A-Star-Search</a>
+            </p>
+    
+    
+              <h3>Feature Selection</h3>
+              <p> 
+              To appease the curse of dimensionality I made a tool that finds the optimal subset of features when using a simple k-means classification model on a dataset of supervised machine learning data. 
+              <br>More info can be found at: <a target="_blank" href="https://github.com/sevdeawesome/Feature-Selection">https://github.com/sevdeawesome/Feature-Selection</a>
+                </p>
+    
+    
+             <h3> Networking App</h3>
+             <p>
+              In Database Management class, a classmate and I created a Java social networking app connected to an SQL database of user and connection information.
+              <br>More info can be found at: <a target="_blank" href=" https://github.com/sevdeawesome/Networking-App"> https://github.com/sevdeawesome/Networking-App</a>
+              </p>
+    
+               
+              <h3> Calendar App</h3>
+             <p>
+              Two classmates and I created a C++ calendar app that allows users to create, edit, and delete events. 
+              The project was focused on design patterns, scrum/agile and learning how to use git and implement automatic testing. 
+              <br>More info can be found at: <a target="_blank" href=" https://github.com/sevdeawesome/C-Calendar"> https://github.com/sevdeawesome/C-Calendar</a>
+              </p>
+    
+    
+             <h3> Monte Carlo Problem</h3>
+             <p>
+              Imagine you were to create an equilateral triangle and pick a point randomly on each edge (see below). What is the probability that the point in the center of the large triangle is
+               within the sub-triangle created by the three random points?
+               
+              Wanna figure it out? You might consider the Monte Carlo statistical method if you're as lazy as I am.
+              <br>Github link: <a target="_blank" href="https://github.com/sevdeawesome/monte_carlo_triangle">https://github.com/sevdeawesome/monte_carlo_triangle</a>
+             <br> <img src="https://raw.githubusercontent.com/sevdeawesome/monte_carlo_triangle/master/tri4.png">
+            </p>
+    
+    
+    
+          </div>
+    
+          <!--!831Poker  -->
+          <!--!831Poker  -->
+          <!--!831Poker  -->
+    
+          <div id="menu3" class="tab-pane fade padding">
+            <img src="img/831poker.png" style="max-width: 90%;" class="enlargable">
+    
+            <h1>831Poker</h1>
+            <p>
+              Poker including a chat app, and multiple lobbies/games for scalability. 
+              Built in Node.JS, vanilla javascript express/socket IO. (you use sockets instead of REST silly)
+              <br>
+              Uses Microsoft Azure (still on a free trial somehow) <a href="https://831poker.azurewebsites.net/">https://831poker.azurewebsites.net/</a>
+              <br>
+              Check out the code here: <a href="https://github.com/sevdeawesome/831poker">https://github.com/sevdeawesome/831poker</a>
+            </p>
+          </div>
+    
+    
+    
+          <!-- !PHYYSICS -->
+          <!-- !PHYYSICS -->
+          <!-- !PHYYSICS -->
+          <div id="menu4" class="tab-pane fade padding">
+         
+              <h1>A couple physics experiments I did in senior year.</h1>
+              
+                <ol>
+                  <li><p>
+                   Experimentally calculating the charge of an electron and Boltzmann's constant
+                     by measuring a resistors noise dependence on temperature and voltage.
+                      
+                  </p></li>
+                    <li><p>The second experiment was creating holograms with a high powered HeNe laser. Hologram = virtual image seen by recording an interference pattern
+                      onto a photoplate. </p></li>
+                  <li><p>Another experiment worth mentioning included identifying decay schemes of radioactive isobars with python.</p></li>
+                </ol>
+    
+                
+                  <a href="physics/noise.pdf">Using Noise to Calculate the Charge of an Electron</a><br>
+                  <a href="physics/holography.pdf">Creating a Hologram with a High Powered HeNe Laser</a><br>
+                  <a href="physics/noise.pdf">Classifying radioactive isobars</a>
+                
+                
+             
+          
+          </div>
+    
+    
+        <!-- !ADD SOON -->
+        <!-- !ADD SOON -->
+        <!-- !ADD SOON -->
+          <div id="menu5" class="tab-pane fade padding">
+            <h1>I'm clearly not very good at this</h1>
+          </div>
+    
+      <!-- !WEB DESIGN -->
+        <!-- !WEB DESIGN -->
+        <!-- !WEB DESIGN -->
+          <div id="menu7" class="tab-pane fade padding">
+            <h1>Web Design</h1>
+            <p>I've worked on a few web design projects including starting a web-hosting business for local small businesses. The initial design can be seen </p>
+          </div>
+    
+        <!-- !MINECRAFT MODDING -->
+        <!-- !MINECRAFT MODDING -->
+        <!-- !MINECRAFT MODDING -->
+          <div id="menu6" class="tab-pane fade padding">
+            <h1>Minecraft Modding</h1>
+            <p>In highschool, some friends and I created minecraft mods and modpacks and ran public servers. 
+             Received over 100,000 unique downloads. Over 20,000 unique players.
+              <br>
+              Examples of the trailers I created:
+            </p>
+    
+            <div class="row">
+              <div class="col-md-6">
+                <iframe width="100%" height="315px" src="https://www.youtube.com/embed/zfzb5SsoI_o" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+              <div class="col-md-6">
+                <iframe width="100%" height="315px" src="https://www.youtube.com/embed/U4_IwLWkQ3Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+
 
 </div>
 
-<!-- JavaScript scripts -->
 
-<!-- 
-  Reference request
-
-  Hi Dr. Papalexakis,
-
-  I’ve enjoyed both the data science challenge and the project with Rutuja this quarter and I’m grateful for these opportunities 
-  that you were a part of which got my foot in the door of data science. 
- 
-
-
- -->
 
 <!-- <script src="js/herobackground.js"></script> -->
 </body>
