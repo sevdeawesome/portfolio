@@ -15,3 +15,10 @@ canvas{
       float: right;
     }
   }
+
+  @media (max-width: 767px) {
+    #bg {
+      display: none;
+    }
+  }
+
