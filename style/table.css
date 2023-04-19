@@ -26,6 +26,26 @@
     color: black;
     margin: 0;
 }
+
 img{
     max-width: 95%;
+}
+
+#calendarcontainer{
+    background-color: #fff;
+    /* padding: 40px; */
+    border-radius: 5px;
+
+}
+#calendar{
+    /* style the github calendar so that it looks like everything else */
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    /* margin: 20px; */
+    padding: 40px;
+    
+    /* background-color: grey; */
+    color: black !important;   
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+    
 }
