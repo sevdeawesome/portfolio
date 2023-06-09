@@ -242,15 +242,7 @@
               <br>More info can be found at: <a target="_blank" href=" https://github.com/sevdeawesome/C-Calendar"> https://github.com/sevdeawesome/C-Calendar</a>
               </p>
     
-              <h3> Monte Carlo Problem</h3>
-              <p>
-               Create an equilateral triangle and pick a point randomly on each edge (see below). What is the probability that the point in the center of the large triangle is
-                within the sub-triangle created by the three random points?
-                
-               Used Monte Carlo simulation to solve this problem for extra credit in AI class. Not very useful but fun.
-               <br>Github link: <a target="_blank" href="https://github.com/sevdeawesome/monte_carlo_triangle">https://github.com/sevdeawesome/monte_carlo_triangle</a>
-              <br> <img src="https://raw.githubusercontent.com/sevdeawesome/monte_carlo_triangle/master/tri4.png">
-             </p>
+             
              
     
     
@@ -264,42 +256,87 @@
           <div id="menu7" class="tab-pane fade padding">
             
             <h1>Some Machine Learning Projects</h1>
+            <p>
+              Outside of class and work, I've learned machine learning with Jeremy Howards fast.ai course, The HuggingFace Reinforcement Learning course, Practical Deep Learning for Coders by Jeremy Howard, Yoshua Bengio's deep learning textbook, MML (Math for Machine Learning), 
+              and other resources. 
+              <br><br>
+              I am drawn to powerful technologies like AI.
+               With it, perhaps we may unravel the mysteries of the universe, solve aging, or become an interplanetary species. Amidst it's promises and allure lies an undeniable truth - powerful technologies bear immense risks.
+              <br><br>
+               Anyways, below are some of my projects. I plan on adding much more 
+            </p>
+<br><br><hr><br><br>
             <h3>A* Search</h3>
             <p>
             Search is a ubiquitous tool in data science. 
             I used multiple different heuristics with A* search to solve the 8 puzzle, comparing their runtime and storage complexity. 
             <br>More information can be found at: <a target="_blank" href="https://github.com/sevdeawesome/A-Star-Search">https://github.com/sevdeawesome/A-Star-Search</a>
+              <br>
+            <img src="img/asearch.png" style="max-width: 86%;" class="enlargable">
           </p>
   
-  <br>
+          <br><br><hr><br><br>
+
             <h3>Feature Selection / Dimensionality Reduction</h3>
             <p> 
             One of my projects in Intro to AI class. After learning about the curse of dimensionality I made a tool that finds the optimal subset of features when using a simple k-means classification model on a dataset of supervised machine learning data. 
             <br>More info can be found at: <a target="_blank" href="https://github.com/sevdeawesome/Feature-Selection">https://github.com/sevdeawesome/Feature-Selection</a>
             <img src="img/featureselection.png" style="max-width: 86%;" class="enlargable">
           </p>
-          <br>
-              <h3>First Kaggle Competition: Key Points <span style="font-size:12px"> *for fun, more coming soon</span></h3>
+
+          <br><br><hr><br><br>
+
+
+              <h3>Kaggle Competition: Key Points </h3>
               <p>
-                Predicting the location of key points on faces. (There are 30 but in the image I only show the first 6)
-                <br>
-                Built dataloaders and started with a minimum viable CNN. Used a small data subset for rapid iteration using model improvement techniques including: <b> test time augmentation, hyperparameter tuning, gradient accumilation (to save memory), dropout regularization, bagging multiple models and layer freezing (with resnet pretrained values) </b>. 
-                 <br>My final submission used transfer learning with resnet, <b>dropout regularization after the first layer and before the last</b>, <b>gradient accumilation</b>, and <b>hyperparameter tuning</b>   to improve accuracy.  
-                <!-- <br>View the notebooks and results <a href="https://github.com/sevdeawesome/facial-keypoints-detection">here</a> -->
+                <b>This is my first Kaggle competition. I will do more!</b> Predicting the location of key points on faces. 
+                <br><br>
+                Built dataloaders and started with a minimum viable CNN. Used a small data subset for rapid iteration using model improvement techniques including: test time augmentation, hyperparameter tuning, gradient accumilation (to save memory), dropout regularization, bagging multiple models and layer freezing (with resnet pretrained values). 
+                 <br><br>My final submission used transfer learning with resnet, dropout regularization after the first layer and before the last, gradient accumilation, and hyperparameter tuning  to improve accuracy.  
+                 <br><br>View the notebooks and results <a href="https://github.com/sevdeawesome/facial-keypoints-detection">here</a>
                  
                 <br>
                 <img src="img/kaggle1.png" style="max-width: 86%;" class="enlargable">
                 </p>
               
-              <br>
-              <br>
+              <br><br>
+              <hr>
+              <br><br>
+
+              <h3> Monte Carlo Problem (extra credit in AI class)</h3>
+              <p>
+               Monte Carlo approximation is used in many machine learning algorithms. Including reinforcement learning, the famous AlphaGo, and my favorite: Mu Zero. <br><br>
+               
+                Create an equilateral triangle and pick a point randomly on each edge (see below). What is the probability that the point in the center of the large triangle is
+                within the sub-triangle created by the three random points?
+                
+               
+               <br>Github link: <a target="_blank" href="https://github.com/sevdeawesome/monte_carlo_triangle">https://github.com/sevdeawesome/monte_carlo_triangle</a>
+              <br> <img src="https://raw.githubusercontent.com/sevdeawesome/monte_carlo_triangle/master/tri4.png">
+             </p>
+
+             <br><br>
+              <hr>
+              <br><br>
+
               <h3>Optimal Image Compression</h3>
               <p>
-                In data analytics class, a group of classmates and I found the optimal color compression of an image as a project on k-means clustering. 
-                 My job was finding the optimal k with an elbow finding algorithm.
+                In data analytics class, a group of classmates and I found the optimal color compression of an image as a project on k-means clustering. K-means was one of the first algorithms used in imagenet.
+                <br><br>My job was finding the optimal k with an elbow finding algorithm.
                  <br>
-                 This was a mini-project. It's not practical but I think it's a cool way to visualize k-means. 
+                 This was a mini-project. I think it's cool to visualize k-means. Now I use elbow finding algorithms all the time!
                 <img src="img/kmeanscat.png" style="max-width: 86%;" class="enlargable">
+
+                <br><br>
+              <hr>
+              <br><br>
+
+              <h3>Terraforming Mars: Lux AI Reinforcement Learning Competition</h3>
+              <p>
+              <a href="https://www.kaggle.com/competitions/lux-ai-season-2">Coming soon</a>
+      <br><br>
+              <img src="img/huggingface.png" style="max-width: 30px;" >
+              </p>
             </div>
 
 
