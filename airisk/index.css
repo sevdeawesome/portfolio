@@ -1,0 +1,69 @@
+body, html {
+    height: 100%;
+    color: #fff !important;
+    background-color: #000 !important;
+    font-family: 'Gabarito', sans-serif;
+    
+}
+
+.content-wrapper {
+    min-height: calc(100% - 100px); /* to adjust for the height of the footer */
+}
+
+blockquote {
+    font-size: 1.5em;
+    margin: 50px auto;
+    color: #fff;
+    padding: 1.2em 30px 1.2em 75px;
+    border-left: 8px solid #fff;
+    line-height: 1.6;
+    position: relative;
+    background: #000;
+}
+
+blockquote::before {
+    font-family: Arial;
+    content: "\201C";
+    color: #fff;
+    font-size: 4em;
+    position: absolute;
+    left: 10px;
+    top: -10px;
+}
+
+blockquote p {
+    margin: 0 0 0.2em;
+    font-weight: 400;
+    font-style: italic;
+}
+
+blockquote footer {
+    font-size: 1.2em;
+    color: #888888;
+}
+
+#bottomfooter {
+    width:100%;
+    padding: 40px;
+    background-color: whitesmoke;
+    color: black !important;
+    /* add a top grey border that fades */
+    background-image: linear-gradient(to top, rgb(241, 241, 241) 0%, lightgrey 86%, black 95%);
+}
+
+/* make a links red */
+#yampolskiylink {
+    color: #8c0010 !important; 
+}
+
+a{
+    color: white !important;
+} 
+.collapse{
+    /* make the collapsible boxes dark grey background and modern and sleek */
+    color: white !important;
+    border-left: 2px solid #fff;
+    padding : 10px;
+    margin: 4px;
+
+}
