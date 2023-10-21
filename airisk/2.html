@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AGI Risk</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #000;
+            color: #FFF;
+        }
+        .header {
+            text-align: center;
+            padding: 100px 0;
+        }
+        .content {
+            text-align: center;
+            padding: 100px 0;
+            font-size: 24px;
+        }
+        .btn {
+            margin: 20px;
+        }
+
+
+        body, html {
+            margin: 0;
+            overflow: hidden;
+            height: 100%;
+        }
+
+        canvas {
+            display: block;
+            background-color: #000;
+        }
+        #backgroundSVG {
+            background-color: black;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        path {
+            opacity: 0.5;
+        }
+
+    </style>
+</head>
+<script>
+
+document.addEventListener('DOMContentLoaded', function() {
+    let paths = document.querySelectorAll('path');
+    paths.forEach((path, index) => {
+        setTimeout(() => {
+            animatePath(path);
+        }, index * 500);  // Delay between each animation
+    });
+});
+
+function animatePath(path) {
+    let length = path.getTotalLength();
+    path.style.transition = path.style.WebkitTransition = 'none';
+    path.style.strokeDasharray = length + ' ' + length;
+    path.style.strokeDashoffset = length;
+    path.getBoundingClientRect();  // Trigger a reflow
+    path.style.transition = path.style.WebkitTransition = 'stroke-dashoffset 2s ease-in-out';
+    path.style.strokeDashoffset = '0';
+}
+
+
+    </script>
+<body>
+    <svg id="backgroundSVG" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"></svg>
+
+    <path d="M10 80 C 40 10, 65 10, 95 80 S 150 150, 180 80" fill="none" stroke="white" stroke-width="2"/>
+
+    <canvas id="backgroundCanvas"></canvas>
+
+    <div class="container">
+        <div class="header">
+            <h1>AGI Risk</h1>
+        </div>
+        <div class="content">
+            <h2>Experimental chatbot created to help explain the dangers of AI</h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+            <a href="#" class="btn btn-light">Chatbot</a>
+            <a href="#" class="btn btn-dark">About Us</a>
+        </div>
+        <div class="footer text-center">
+            Footer
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
