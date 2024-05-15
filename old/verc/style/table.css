@@ -1,0 +1,51 @@
+.tab-content{
+    padding: 20px;
+    background-color: #fff;
+    color: black;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+
+}
+#desktopmenu .active a {
+    background-color:  white;
+    color: black;
+  }
+  
+#desktopmenu a{
+    font-size: 25px;
+    color: white;
+}
+
+#desktopmenu a:hover{
+    /* font-size: 40px; */
+    background-color: rgba(149, 149, 149,.5);
+}
+
+#desktopmenu .dropdown-menu{
+    background-color: black;
+    color: black;
+    margin: 0;
+}
+
+img{
+    max-width: 95%;
+}
+
+#calendarcontainer{
+    background-color: #fff;
+    /* padding: 40px; */
+    border-radius: 5px;
+
+}
+#calendar{
+    /* style the github calendar so that it looks like everything else */
+    /* border: 1px solid #ddd; */
+    border-radius: 5px;
+    /* margin: 20px; */
+    padding: 40px;
+    
+    /* background-color: grey; */
+    color: black !important;   
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+    
+}

@@ -72,10 +72,13 @@
        
         <div class="col-md-6 col-sm-10 ">
             <div class="row mt-5"><h1 class="title">> Severin Field</h1>
+              <!-- <h2>Researching the <a href="https://aisafety.dance/" target="_blank">alignment problem</a> in hopes of building <a href="https://intelligence.org/files/CFAI.pdf" target="_blank">friendly AGI</a></h2><br> -->
               <h2 class="subtext">
                 <a target="_blank" href="https://github.com/sevdeawesome"><i class="fa fa-github"></i></a>   
                 <a href="https://www.linkedin.com/in/severin-field-3b2960165/" target="_blank"><i class="fa fa-linkedin"></i></a>
                 <a target="sfiel003@ucr.edu" href="mailto:sfiel003@ucr.edu"><i class="fa fa-envelope"></i></a>  
+                <!-- google scholar -->
+                <a target="_blank" href="https://scholar.google.com/citations?user=NqzWouQAAAAJ&hl=en&citsig=ANVigOt3b0icySTzk7fUxccGxH4B"><i class="fa fa-graduation-cap"></i></a>
               </h2>
             </div>
 
@@ -93,33 +96,36 @@
 
 
 <div id="work" class="container">
-    <h1 class="title">My Experience</h1>
    
 
 
     <div class="table">
       <ul class="nav nav-pills" id="desktopmenu">
         
-          <li class="active"><a data-toggle="tab" href="#home">Intel</a></li>
-          <!-- <li><a data-toggle="tab" href="#menuintel">Intel</a></li> -->
+        <!-- <li><a data-toggle="tab" href="#menuintel">Intel</a></li> -->
+        
+        
+        <li class="dropdown" > <!--id="mobilemenu"-->
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+            Experience<span class="caret"></span></a>
+            <ul class="dropdown-menu" role="menu">
+              <li> <a href="#home" data-toggle="tab">Home Page</a></li>
+                <li><a data-toggle="tab" href="#menu3">Intel</a></li>
+                <li><a data-toggle="tab" href="#menu0">Undergrad Research</a></li>
+              <li><a data-toggle="tab" href="#menu1">Computer Vision Intern @ LLNL </a></li>
+              </ul>
+            </li>
 
-          <li><a data-toggle="tab" href="#menu0">LIGO</a></li>
-          <li><a data-toggle="tab" href="#menu1">LLNL</a></li>
-          
+
           <li class="dropdown" > <!--id="mobilemenu"-->
             <a class="dropdown-toggle" data-toggle="dropdown" href="#">
               Projects <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
+                <li><a data-toggle="tab" href="#menu12">AI Alignment</a></li>
                 <li><a data-toggle="tab" href="#menu7">Machine Learning</a></li>
-                <li><a data-toggle="tab" href="#menu12">AI Safety</a></li>
-
-                <!-- <li><a data-toggle="tab" href="#menu3">831Poker</a></li> -->
                 <li><a data-toggle="tab" href="#menu2">Software</a></li>
                 <li><a data-toggle="tab" href="#menu4">Physics Experiments</a></li>
                 <li><a data-toggle="tab" href="#menu6">Minecraft Modding</a></li>
-                <!-- <li><a data-toggle="tab" href="#menu5">Discord Bots</a></li> -->
-                <!-- <li><a data-toggle="tab" href="#menu5">Web Projects</a></li> -->
-                <!-- <li><a data-toggle="tab" href="#menu5">Sevnet</a></li> -->
               </ul>
             </li>
         </ul>
@@ -127,45 +133,31 @@
         <div class="tab-content">
     
     
-          <!-- !HOME -->
-          <!-- !HOME -->
-          <!-- !HOME -->
-          <!-- <div id="home" class="tab-pane fade in active padding">
-            <h1>My portfolio</h1>
-            
-            <p>JEJE</p>
-          </div> -->
-  
-
-
-
-          <!-- !intel -->
-          <!-- !intel -->
-          <!-- !intel -->
-          <div id="menuintel" class="tab-pane fade in padding">
-            <img src="img/intel+tf.png" width="600px">
-            <h1>AI Frameworks Engineer</h1>
-            
-            <p>At Intel, I developed a test harness and CI Pipeline for MLIR Extensions, a compiler infrastructure used in machine learning frameworks.
-               I also performed benchmarks on physics ML models for Argonne National Labs on Intel Max Series GPU.
-               Finally, I served as the point of contact for transitioning to GitHub Actions in AI Frameworks Team at Intel (working on Intel TensorFlow Extensions).
-              </p>
-            
-          </div>
 
           <!-- !intel as home -->
           <!-- !intel as home -->
           <!-- !intel as home -->
           <div id="home" class="tab-pane fade in active padding">
-            <img src="img/intel+tf.png" width="600px">
-            <h1>AI Frameworks Engineer</h1>
+            <h1>Hello!</h1><p>This is my portfolio! I'm currently researching the <a href="https://aisafety.dance/" target="_blank">alignment problem</a> in hopes of building <a href="https://intelligence.org/files/CFAI.pdf" target="_blank">friendly AGI</a></p><br>
             
-            <p>At Intel, I developed a test harness and CI Pipeline for MLIR Extensions, a compiler infrastructure used in machine learning frameworks.
-              I also performed benchmarks on physics ML models for Argonne National Labs on Intel Max Series GPU.
-              Finally, I served as the point of contact for transitioning to GitHub Actions in AI Frameworks Team at Intel (working on Intel TensorFlow Extensions).
-             </p>
+
+
+           
           </div>
 
+          <div id="menu3" class="tab-pane fade in padding">
+            <img src="img/intel+tf.png" width="600px">
+            <h1>AI Frameworks Engineer</h1>
+            <p>
+              At Intel I:
+              <ul>
+                <li><p>built a test harness and CI Pipepne for MpR Extensions, a compiler infrastructure used in machine learning frameworks</p> </li>
+                <li><p>was the SPOC transitioning from Jenkins to Github Actions in AI Frameworks Team at Intel</p></li>
+                <li><p>contributed to Intel TensorFlow Extensions</p></li>
+                <li><p>performed benchmarks on models for Argonne National Labs on Intel Max Series GPU.</p></li>
+              </ul> 
+            </p>
+          </div>
 
 
 
@@ -189,7 +181,7 @@
           <!-- !LLNL -->
           <!-- !LLNL -->
           <div id="menu1" class="tab-pane fade in padding">
-            <h1>Internship: Lawrence Livermore National Labs Data Science Challenge</h1>
+            <h1>Lawrence Livermore National Labs Data Science Challenge</h1>
             <p>
               Worked in a team including undergraduates, a graduate student, and an LLNL physicist on two physics related computer vision problems.
               The projects included data cleaning, 
@@ -256,37 +248,40 @@
           <!--! AI Safety  -->
           <!--! AI Safety  -->
           <div id="menu12" class="tab-pane fade padding">
-            <h1>AI Safety</h1>
-            <p>
-              The world has a lot of problems. If we could just build a superintelligence to solve them, that would be great. 
-              I've been interested in AI Safety questions since college, where I read Max Tegmark, Ray Kurzweil, Eliezer Yudkowsky and others. 
-              My current favorite book is AI Safety and Security by Dr. Roman Yampolskiy. 
-              <br>
-              <br>
-              I'll add more to this section soon
-            </p>
-        <br><br><hr><br><br>
-        <h3>AGIRisk.org</h3>
+            <h2>AI Safety Work</h2>
+              <p>
+                I've been interested in AI alignment since college, where I read Max Tegmark, Ray Kurzweil, Eliezer Yudkowsky and others. 
+                My current favorite book is AI Safety and Security by Dr. Roman Yampolskiy. I would like the future to go well for all sentient life (carbon-based, silicon-based, etc)
+                <br>
+                <br>
+                I'll add more to this section soon
+              </p>
+      <br><hr><br>
+      <h3>ERA Fellowship</h3>
+              <p>I'm participating in the ERA fellowship this summer in Cambridge, UK.</p>
+      <br><hr><br>
+      <h3>POSER</h3>
+              <p>I co-authored POSER (<a href="https://arxiv.org/html/2405.05466v2">https://arxiv.org/html/2405.05466v2</a>) We trained LLMs to fake alignment and defect when they can get away with it (<a href="https://www.lesswrong.com/tag/deceptive-alignment">see deceptive alignment</a>). We ask whether we can catch alignment fakers with interpretability methods and introduce an interpretability benchmark. Submitted to NeurIPS</p>
+      <br><hr><br>
+      <h3>AI Safety Camp</h3>
+        <p>Currently working with Bogdan-Ionut Cirstea on a literature review of superalignment (OpenAI's alignment plan). We have a website for the project! <a href="https://promisingness-of-automating-alignment.github.io/">https://promisingness-of-automating-alignment.github.io/</a></p>
+        <br><hr><br>
+
+        <h3>Global Challenges Project Conference</h3>
+        <p>Attending global challenges conference and workshop on AI Safety and bio-risk. November 24-27, 2023</p>
+      <br><hr><br>
+      <h3>AGIRisk.org</h3>
         <p>
         Langchain Chatbot to explain the gravity of the existential risk of recursively self-improving intelligent systems.
         <br>More information can be found at: <a target="_blank" href="http://agirisk.org">agirisk.org</a>
           <br>
         <img src="img/agirisk.png" style="max-width: 86%;" class="enlargable">
       </p>
-      <br><br><hr><br><br>
-
-      <h3>AI Safety Camp</h3>
-      <p>Currently working with Bogdan Ionut Cirstea on a literature review of superalignment. More info <a href="https://docs.google.com/document/d/1cXU-DoE2O2vLhVBRWYFBcXyyOuvwVQx97wwtMroJzZU/edit#heading=h.9lmc73wscx1r">here</a></p>
-      <br><br><hr><br><br>
-      <h3>Independent Research with the Center for AI Safety Compute Cluster</h3>
-      <p>More info here soon.</p>
-      <br><br><hr><br><br>
+      <br><hr><br>
       <h3>AI Safety Reading Group</h3>
-      <br><br><hr><br><br>
-      <h3>Global Challenges Project Conference</h3>
-      <p>Attending global challenges conference and workshop on AI Safety and bio-risk. November 24-27, 2023</p>
-      <br><br><hr><br><br>
-      Hopefully agi comes into this world happy, healthy, well adjusted and caring about humans.
+      <p>wip</p>
+      <h3>Persuasion Project</h3>
+      <p>wip</p>
           </div>
           
 
@@ -408,7 +403,6 @@
          
               <img src="img/gw-merger.jpg" style="max-width: 40%; border-radius: 10px;">
               <h1>A couple physics experiments I did in college</h1>
-              <p>I feel like I should add these, it's the thing i studied</p>
               <p>
                 <ol>
                   <li><p>

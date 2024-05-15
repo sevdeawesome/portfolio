@@ -1,0 +1,66 @@
+/* ! FONTS AND COLORS AND WHATNOT HERE */
+
+
+body{
+    background-color: black !important;
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+    overflow-x: hidden;
+    color: white !important;
+
+}
+
+.subtext{
+    margin-top: -2px !important;
+    font-size: 2.5em;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 200 !important;
+    /* color: rgb(245, 41, 0); */
+    color: red !important;
+}
+.subtext a{
+    color: white;
+}
+
+
+
+.title{
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: 700;
+    /* make the font twice as big */
+    font-size: 4em;
+}
+h3{
+    font-family: 'Gothic A1', sans-serif;
+    /* font-weight: bold !important; */
+}
+ol , p {
+    /* font-family: 'Gothic A1', sans-serif; */
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+
+    font-weight: 400 !important;
+    font-size: large;
+    overflow:auto;
+    /* color: red !important; */
+}
+
+.container{
+    margin: 30px;
+}
+
+.img{
+    max-width: 90%;
+}
+
+.img-wrapper::after {
+    font-family: 'Roboto', 'Arial', sans-serif !important;
+
+    font-weight: 400 !important;
+    font-size: large;
+    content: 'Click Image To View Full Size';
+    display: block;
+}
+
+.enlargable:hover{
+    cursor: pointer;
+}
+
